@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
   background-position: 50% 0;
@@ -13,8 +14,8 @@ section {
   padding: 2rem 0;
 }
 
-button:focus{
-  outline:none !important;
+button:focus {
+  outline: none !important;
 }
 
 ul {
@@ -71,7 +72,6 @@ li {
         @media (max-width: 320px) {
           display: none;
         }
-
       }
     }
     .icon-bar {
@@ -81,11 +81,10 @@ li {
       border-radius: 1px;
       background-color: #036eb6;
     }
-    .icon-bar+.icon-bar {
+    .icon-bar + .icon-bar {
       margin-top: 4px;
     }
   }
-
 }
 
 .first_section {
@@ -111,21 +110,22 @@ li {
 
 #product {
   padding: 5rem 0;
-  background-color: #fbfbfb
+  background-color: #fbfbfb;
 }
 
-  .img-container { //home img
-    width: 100%;
-    height: 350px;
-    padding: 10px;
-    position: relative;
+.img-container {
+  //home img
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+  position: relative;
 
-    img {
-      width: 100%;
-      position: absolute;
-      top: 60px;
-    }
+  img {
+    width: 100%;
+    position: absolute;
+    top: 60px;
   }
+}
 
 .text_box {
   vertical-align: middle;
@@ -144,13 +144,13 @@ li {
   overflow: hidden;
 }
 .hvr-underline-from-left:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #2098D1;
+  background: #2098d1;
   height: 2px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -159,7 +159,9 @@ li {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
   right: 0;
 }
 
@@ -180,10 +182,10 @@ li {
   color: #808080;
   background-color: #333;
   padding: 45px 30px;
-    img {
-      width: 15px;
-      margin-right: 5px;
-    }
+  img {
+    width: 15px;
+    margin-right: 5px;
+  }
 }
 
 /*
@@ -191,7 +193,6 @@ All css below is facultative, except for:
 .slider { position: relative; }
 .slider div { position: absolute; }
 */
-
 
 .main_slider {
   margin: 0 auto;
@@ -204,25 +205,22 @@ All css below is facultative, except for:
 }
 
 .main_slider div {
-  width: 100%;
-  height: 100%;
-
-  background: #fff;
-  position: absolute;
-  background: #fff;
-
-  text-align: center;
+  .slider-item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
 }
-
-div#red { background: url("../images/banner_hiring.jpg") no-repeat center center; background-size: auto 100%;}
-div#green { background: url("../images/banner_intern.jpg") no-repeat center center;
-  background-size: auto 100%;}
-div#blue { background: url("../images/default_slide.png") no-repeat center center; background-size: auto 100%;}
-
 
 .animation-element.slide-down {
   opacity: 0;
-
 }
 
 .animation-element.slide-down.in-view {
@@ -273,7 +271,6 @@ div#blue { background: url("../images/default_slide.png") no-repeat center cente
     transform: translate3d(0px, 0px, 0px);
   }
 }
-
 
 .animation-element.slide-up {
   opacity: 0;
@@ -343,10 +340,12 @@ div#blue { background: url("../images/default_slide.png") no-repeat center cente
 
 .animation-element.text-3d {
   transition: all 2000ms ease;
-  background: #add8e8 url("../images/bg_text_hiring.png") center center no-repeat;
+  background: #add8e8 url('../images/bg_text_hiring.png') center center
+    no-repeat;
   background-size: 100%;
 }
 
 .animation-element.text-3d.in-view {
-  background: #add8e8 url("../images/3D_text_hiring.png") center center no-repeat;
+  background: #add8e8 url('../images/3D_text_hiring.png') center center
+    no-repeat;
 }

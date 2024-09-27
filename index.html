@@ -72,55 +72,64 @@
 
     <div id="Header">
         <!-- TopBar -->
-        <div class="wrap fixed-top navbar-wrap">
-            <nav class="nav justify-content-between">
-                <!-- 導覽logo -->
-                <a class="navbar-brand modal-dialog-centered" href="index.html">
-                    <img src="images/logo_blue.svg"><span>金富發</span>
-                </a>
-                <form class="d-flex login-btn">
-                    <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
-                    <a class="btn login-btn__signin" href="javascript:void(0)">註冊</a>
-                </form>
-            </nav>
-            <nav class="nav navbar-expand-md justify-content-between ">
-                <button class="navbar-toggler my-auto" type="button" data-toggle="collapse"
-                    data-target="#navbar-ex1-collapse" aria-controls="#navbar-ex1-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                        class="icon-bar"></span><span class="icon-bar"></span>
-                </button>
-                <!-- 導覽內容列 -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-ex1-collapse">
-                    <ul class="nav navbar-nav ml-md-auto justify-content-end">
-                        <li class="nav-item modal-dialog-centered">
-                            <a class="nav-link hvr-underline-from-left" href="about.html">公司介紹</a>
-                        </li>
-                        <li class="nav-item modal-dialog-centered">
-                            <a class="nav-link hvr-underline-from-left" href="benefit.html">員工福利</a>
-                        </li>
-                        <li class="nav-item modal-dialog-centered">
-                            <a class="nav-link hvr-underline-from-left" href="new_activity.html">公司活動</a>
-                        </li>
-                        <li class="nav-item modal-dialog-centered">
-                            <a class="nav-link hvr-underline-from-left" href="hiring.html">人才招募</a>
-                        </li>
-                        <li class="nav-item modal-dialog-centered">
-                            <a class="nav-link hvr-underline-from-left" href="intern.html">實習生專區</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="header-brand">
+            <div class="wrap fixed-top navbar-wrap">
+                <nav class="nav justify-content-between">
+                    <!-- 導覽logo -->
+                    <a class="navbar-brand modal-dialog-centered" href="index.html">
+                        <img src="images/logo_blue.svg"><span>金富發</span>
+                    </a>
+                    <form class="d-flex login-btn">
+                        <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
+                        <a class="btn login-btn__signin" href="javascript:void(0)">註冊</a>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="wrap fixed-top navbar-wrap">
+                <nav class="nav navbar-expand-md justify-content-between ">
+                    <button class="navbar-toggler my-auto" type="button" data-toggle="collapse"
+                        data-target="#navbar-ex1-collapse" aria-controls="#navbar-ex1-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <!-- 導覽內容列 -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-ex1-collapse">
+                        <ul class="nav navbar-nav justify-content-start">
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">熱門游戏</a>
+                            </li>
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">真人游戏</a>
+                            </li>
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">體育游戏</a>
+                            </li>
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">电子游戏</a>
+                            </li>
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">彩球游戏</a>
+                            </li>
+                            <li class="nav-item modal-dialog-centered">
+                                <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">捕魚游戏</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </div>
     <!-- slider -->
     <section id="sliderbox">
-
-        </div>
-
         <div class="main_slider">
-            <div id="red"></div>
-            <div id="green"></div>
-            <!--<div id="blue"></div>-->
+            <div id="red" class="slider-item">
+                <img class="slider-item__img" src="/images/banner_1.webp" alt="">
+            </div>
+            <div id="green" class="slider-item">
+                <img class="slider-item__img" src="/images/banner_2.webp" alt="">
+            </div>
         </div>
 
     </section>
