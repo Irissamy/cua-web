@@ -30,6 +30,46 @@
 </head>
 
 <body>
+    <!-- 公告popup -->
+    <div class="modal fade show" id="exampleModalCenteredScrollable" tabindex="-1"
+        aria-labelledby="exampleModalCenteredScrollableTitle" aria-modal="true" role="dialog" style="display:block">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title">
+                        公告
+                    </h5><button type="button" aria-label="Close" class="close" onclick="showPromotions()">×</button>
+                </header>
+                <div class="modal-body">
+                    <div class="tab-panel">
+                        <div class="tab-group">
+                            <div class="tabnav active">標題1</div>
+                            <div class="tabnav">標題2</div>
+                            <div class="tabnav">標題3</div>
+                        </div>
+                        <div class="panel-group">
+                            <div class="panel active">
+                                <span>內容標題1</span>
+                                <p>內容內容內容</p>
+                            </div>
+                            <div class="panel">
+                                <span>內容標題2</span>
+                                <p>內容內容內容</p>
+                            </div>
+                            <div class="panel">
+                                <span>內容標題3</span>
+                                <p>內容內容內容</p>
+                            </div>
+                        </div> <button type="button" class="btn btn-submit btn-block" data-dismiss="modal"
+                            onclick="showPromotions()">關閉</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop"></div>
+    </div>
+    <!-- 公告popup end-->
+
     <div id="Header">
         <!-- TopBar -->
         <div class="wrap fixed-top navbar-wrap">
@@ -249,7 +289,14 @@
         setInterval(jdSlider, 2000);
 
 
-
+        function showPromotions() {
+            var popup = document.getElementById('exampleModalCenteredScrollable');
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        }
     </script>
 </body>
 
