@@ -438,10 +438,12 @@ html {
   font-size: 15px;
   line-height: 1.75em;
   color: #333;
+  background-color: #21357b;
   font-family: Microsoft JhengHei;
 }
 
 section {
+  background-color: transparent;
   padding: 2rem 0;
 }
 
@@ -608,31 +610,6 @@ All css below is facultative, except for:
 .slider { position: relative; }
 .slider div { position: absolute; }
 */
-.main_slider {
-  margin: 0 auto;
-  width: 100%;
-  height: 50vh;
-  position: relative;
-}
-@media (max-width: 400px) {
-  .main_slider {
-    height: 34vh;
-  }
-}
-
-.main_slider div {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #fff;
-  position: absolute;
-  text-align: center;
-}
-.main_slider div .slider-item__img {
-  display: block;
-  width: 100%;
-}
-
 .animation-element.slide-down {
   opacity: 0;
 }
@@ -726,6 +703,7 @@ All css below is facultative, except for:
 }
 
 .modal-backdrop {
+  z-index: auto;
   opacity: 0.65;
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-backdrop-filter: blur(3px);
@@ -818,16 +796,21 @@ All css below is facultative, except for:
     max-width: 500px;
   }
 }
+#Header {
+  background-color: #21357b;
+}
+#Header .header-brand .nav {
+  padding: 8px 16px;
+}
 #Header .header-nav {
   background: linear-gradient(135deg, #58b4c6, #237c8d 80%);
 }
-
-#Header .wrap > nav {
+#Header .header-nav .nav {
   padding: 0px 16px;
 }
 
-#sliderbox {
-  padding-top: 94px;
+.carousel-slider {
+  padding-top: 80px;
 }
 
 .login-btn__login {
@@ -835,4 +818,56 @@ All css below is facultative, except for:
 }
 .login-btn__signin {
   background: linear-gradient(135deg, #58b4c6, #237c8d 80%);
+}
+.login-btn .btn {
+  margin-right: 8px;
+}
+.login-btn .btn:last-child {
+  margin-right: 0px;
+}
+
+.notice {
+  min-height: 34px;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.notice__outer {
+  padding-left: 32px;
+  overflow: hidden;
+  position: relative;
+  background-color: #4763c3;
+  border-radius: 8px;
+  box-shadow: inset rgba(0, 0, 0, 0.3137254902) 2px 2px 4px 0px;
+}
+.notice__outer .outer-icon {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 8px;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  background-image: url('../images/ic_bulletin@3x.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.notice__outer .quick-tips {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.notice__outer .quick-tips__item {
+  display: inline-block;
+  font-size: 12px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+section {
+  background-color: transparent;
 } /*# sourceMappingURL=main.css.map */

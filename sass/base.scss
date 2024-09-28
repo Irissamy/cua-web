@@ -7,10 +7,12 @@ html {
   font-size: 15px;
   line-height: 1.75em;
   color: #333;
+  background-color: #21357b;
   font-family: Microsoft JhengHei;
 }
 
 section {
+  background-color: transparent;
   padding: 2rem 0;
 }
 
@@ -193,31 +195,6 @@ All css below is facultative, except for:
 .slider { position: relative; }
 .slider div { position: absolute; }
 */
-
-.main_slider {
-  margin: 0 auto;
-  width: 100%;
-  height: 50vh;
-  position: relative;
-  @media (max-width: 400px) {
-    height: 34vh;
-  }
-}
-
-.main_slider div {
-  .slider-item {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #fff;
-    position: absolute;
-    text-align: center;
-    &__img {
-      display: block;
-      width: 100%;
-    }
-  }
-}
 
 .animation-element.slide-down {
   opacity: 0;

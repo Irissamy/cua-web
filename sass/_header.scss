@@ -1,15 +1,18 @@
 #Header {
+  background-color: #21357b;
+  .header-brand {
+    .nav {
+      padding: 8px 16px;
+    }
+  }
   .header-nav {
     background: linear-gradient(135deg, #58b4c6, #237c8d 80%);
+    .nav {
+      padding: 0px 16px;
+    }
   }
 }
 
-#Header {
-  .wrap > nav {
-    padding: 0px 16px;
-  }
-}
-
-#sliderbox {
-  padding-top: 94px;
+.carousel-slider {
+  padding-top: 80px;
 }
