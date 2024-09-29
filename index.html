@@ -75,10 +75,30 @@
                     <a class="navbar-brand modal-dialog-centered" href="index.html">
                         <img src="images/logo_blue.svg"><span>金富發</span>
                     </a>
-                    <form class="d-flex login-btn">
-                        <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
-                        <a class="btn login-btn__signin" href="javascript:void(0)">註冊</a>
-                    </form>
+                    <div class="d-flex align-items-center">
+                        <form class="d-flex login-btn">
+                            <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
+                            <a class="btn login-btn__signin" href="javascript:void(0)">註冊</a>
+                        </form>
+                        <a href="javascript:void(0);" class="header-icon" onclick="showLang()">
+                            <div class="header-icon__icon-img"></div>
+                        </a>
+                        <ul id="show" class="lang-list" style="display: none;">
+                            <li class="lang-list__item lang-list__item--active">
+                                <!-- <img src="images/common/image/icon/icon_exclamation-gold@2x.png" alt="" class="item-check"> -->
+                                <span class="item-title">繁體中文</span>
+                            </li>
+                            <li class="lang-list__item">
+                                <span class="item-title">English</span>
+                            </li>
+                            <li class="lang-list__item">
+                                <span class="item-title">简体中文</span>
+                            </li>
+                            <li class="lang-list__item">
+                                <span class="item-title">Tiếng việt</span>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -133,28 +153,30 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- CAROUSEL END -->
-    <!-- 公告 -->
-    <section class="notice-marquee">
-        <div class="container">
-            <div class="row justify-content-center">
-                <a href="javascript:void(0);" class="notice">
-                    <div class="notice__outer">
-                        <div class="outer-icon"></div>
-                        <div class="quick-tips">
-                            <p class="quick-tips__item">1.喜讯
-                                开元棋牌业务升级，【炸金花】【德州扑克】两款游戏有效投注计算方式调整为按照单局输赢金额计算，有效投注计算方式大幅度提高，棋牌优惠所需流水更容易达到，欢迎广大贵宾前来体验！
-                            </p>
-                            <p class="quick-tips__item">2.小心诈骗QQ群组
-                                敬请会员留意：近期有不法分子利用官网QQ号码创建QQ群组，假冒官方客服进行诈骗的行为；公司郑重声明：我司所有充值入口都需要登入网站点击线上存款进行查看，绝对不会通过QQ客服窗口提供充值卡号或充值二维码；若因贵宾无视公司温馨提醒导致被骗，造成的一切损失由贵宾自行承担，公司概不负责，如给您带来不便，敬请谅解，谢谢！
-                            </p>
+        <!-- 公告 -->
+        <div class="notice-marquee">
+            <div class=" container">
+                <div class="row justify-content-center">
+                    <a href="javascript:void(0);" class="notice">
+                        <div class="notice__outer">
+                            <div class="outer-icon"></div>
+                            <div class="quick-tips">
+                                <p class="quick-tips__item">1.喜讯
+                                    开元棋牌业务升级，【炸金花】【德州扑克】两款游戏有效投注计算方式调整为按照单局输赢金额计算，有效投注计算方式大幅度提高，棋牌优惠所需流水更容易达到，欢迎广大贵宾前来体验！
+                                </p>
+                                <p class="quick-tips__item">2.小心诈骗QQ群组
+                                    敬请会员留意：近期有不法分子利用官网QQ号码创建QQ群组，假冒官方客服进行诈骗的行为；公司郑重声明：我司所有充值入口都需要登入网站点击线上存款进行查看，绝对不会通过QQ客服窗口提供充值卡号或充值二维码；若因贵宾无视公司温馨提醒导致被骗，造成的一切损失由贵宾自行承担，公司概不负责，如给您带来不便，敬请谅解，谢谢！
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- CAROUSEL END -->
+
+
 
     <section id="product">
         <div class="container">
@@ -310,6 +332,15 @@
 
         function showPromotions() {
             var popup = document.getElementById('exampleModalCenteredScrollable');
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        }
+
+        function showLang() {
+            var popup = document.getElementById('show');
             if (popup.style.display === 'none') {
                 popup.style.display = 'block';
             } else {

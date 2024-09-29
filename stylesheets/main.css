@@ -810,7 +810,88 @@ All css below is facultative, except for:
 }
 
 .carousel-slider {
-  padding-top: 80px;
+  position: relative;
+  padding-top: 96px;
+}
+
+.header-icon {
+  width: 24px;
+  height: 24px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-left: 8px;
+}
+.header-icon__icon {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.header-icon__icon .icon-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: middle;
+}
+.header-icon__icon-img {
+  width: 24px;
+  height: 24px;
+  -webkit-mask-image: url('../images/icon_earth@2x.png');
+  mask-image: url('../images/icon_earth@2x.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%);
+}
+
+.lang-list {
+  position: absolute;
+  top: 44px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.7019607843);
+  list-style: none;
+  margin: 0px;
+  padding: 16px;
+  z-index: 1;
+}
+.lang-list__item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.lang-list__item .item-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+.lang-list__item .item-title::before {
+  content: '';
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding-right: 8px;
+  background-image: url('../images/icon_exclamation-gold@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.lang-list__item .item-check {
+  display: block;
+  width: 20px;
+}
+.lang-list__item:last-child {
+  padding-bottom: 0px;
+}
+.lang-list__item--active .item-title {
+  font-weight: 600;
+  color: #f5cb9b;
+}
+.lang-list__item--active .item-title::before {
+  display: block;
 }
 
 .login-btn__login {
@@ -826,15 +907,21 @@ All css below is facultative, except for:
   margin-right: 0px;
 }
 
+.notice-marquee {
+  position: absolute;
+  bottom: -20px;
+  z-index: 1;
+  width: 100%;
+}
+
 .notice {
-  min-height: 34px;
-  position: relative;
+  min-height: 44px;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 .notice__outer {
-  padding-left: 32px;
+  padding-left: 48px;
   overflow: hidden;
   position: relative;
   background-color: #4763c3;
@@ -846,10 +933,10 @@ All css below is facultative, except for:
   top: 0;
   right: auto;
   bottom: 0;
-  left: 8px;
+  left: 16px;
   margin: auto;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   background-image: url('../images/ic_bulletin@3x.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -862,10 +949,10 @@ All css below is facultative, except for:
 }
 .notice__outer .quick-tips__item {
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   color: #ffffff;
   margin: 0;
-  padding-bottom: 5px;
+  padding: 8px;
 }
 
 section {
