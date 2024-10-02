@@ -432,13 +432,16 @@ template,
 body,
 html {
   width: 100%;
-  height: 100%;
   background-position: 50% 0;
   background-repeat: repeat-y;
   font-size: 15px;
   line-height: 1.75em;
-  color: #333;
+  color: #fff;
   background-color: #21357b;
+  background-image: url('../images/header-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Microsoft JhengHei;
 }
 
@@ -472,7 +475,7 @@ li {
   background-color: white;
 }
 #Header a {
-  color: black;
+  color: #f1f0f0;
 }
 #Header .wrap {
   position: relative;
@@ -487,7 +490,7 @@ li {
   justify-content: center;
 }
 #Header .wrap .navbar-brand img {
-  width: 30px;
+  height: 44px;
   margin: -1px 5px 0 0;
 }
 #Header .wrap .navbar-brand span {
@@ -537,14 +540,11 @@ li {
 
 .img-container {
   width: 100%;
-  height: 350px;
   padding: 10px;
   position: relative;
 }
 .img-container img {
   width: 100%;
-  position: absolute;
-  top: 60px;
 }
 
 .text_box {
@@ -803,7 +803,12 @@ All css below is facultative, except for:
   padding: 8px 16px;
 }
 #Header .header-nav {
-  background: linear-gradient(135deg, #58b4c6, #237c8d 80%);
+  background-image: linear-gradient(
+    to right,
+    #5c48e0 10%,
+    #8181f0 50%,
+    #5c48e0 100%
+  );
 }
 #Header .header-nav .nav {
   padding: 0px 16px;
@@ -957,4 +962,65 @@ All css below is facultative, except for:
 
 section {
   background-color: transparent;
+}
+
+.app-download {
+  background-image: url('../images/block_bg_01.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.con-title {
+  display: block;
+  width: 100%;
+}
+
+.product-img.slide-down-rt {
+  position: absolute;
+  bottom: 44px;
+  right: 0px;
+  display: block;
+  width: 50%;
+  animation-delay: 0.5s;
+}
+.product-img.slide-down-lf {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  display: block;
+  width: 35%;
+}
+
+.download-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+.download-box__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.download-box__item .item-title {
+  color: #f18f34;
+  margin: -10px;
+}
+.download-box__item .item-bg {
+  width: 100%;
+  height: auto;
+}
+.download-box__item .item-icon {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 60%;
+}
+.download-box__item .item-icon__img {
+  display: block;
+  width: 100%;
 } /*# sourceMappingURL=main.css.map */

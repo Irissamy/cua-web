@@ -1,13 +1,16 @@
 body,
 html {
   width: 100%;
-  height: 100%;
   background-position: 50% 0;
   background-repeat: repeat-y;
   font-size: 15px;
   line-height: 1.75em;
-  color: #333;
+  color: #fff;
   background-color: #21357b;
+  background-image: url("../images/header-2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Microsoft JhengHei;
 }
 
@@ -41,7 +44,7 @@ li {
   background-color: white;
 }
 #Header a {
-  color: black;
+  color: #f1f0f0;
 }
 #Header .wrap {
   position: relative;
@@ -56,7 +59,7 @@ li {
   justify-content: center;
 }
 #Header .wrap .navbar-brand img {
-  width: 30px;
+  height: 44px;
   margin: -1px 5px 0 0;
 }
 #Header .wrap .navbar-brand span {
@@ -106,14 +109,11 @@ li {
 
 .img-container {
   width: 100%;
-  height: 350px;
   padding: 10px;
   position: relative;
 }
 .img-container img {
   width: 100%;
-  position: absolute;
-  top: 60px;
 }
 
 .text_box {
