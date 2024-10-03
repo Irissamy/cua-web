@@ -10,16 +10,10 @@
     <meta name="description" content="" />
     <meta name="google" content="notranslate" />
     <title>金富發</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 
@@ -221,46 +215,177 @@
             </div>
         </div>
     </section>
-    <section id="our-office">
+    <section class="game-box">
         <div class="container">
-            <h2>自由、舒適、溫馨的工作環境</h2>
-            <p>
-                公司坐落於信義區，交通便利，通勤上班好位置！<br>
-                寬敞無隔間的辦公環境，讓你隨時與夥伴對話交流！
-            </p>
-            <section class="myslick slider">
-                <div>
-                    <img src="./images/intro-pic01.jpg">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12">
+                    <img class="con-title" src="./images/title-02@2x.png" alt="">
                 </div>
-                <div>
-                    <img src="./images/intro-pic02.jpg">
+            </div>
+            <div class="sidebar-list">
+                <a href="#channel1" class="list-item active" onclick="openCity(event, 'channel1')">
+                    <img src="./images/_sidebar/icon/icon-hot@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-hot_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">热门游戏</span>
+                </a>
+                <a href="#channel2" class="list-item" onclick="openCity(event, 'channel2')">
+                    <img src="./images/_sidebar/icon/icon-live@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-live_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">真人游戏</span>
+                </a>
+                <a href="#channel3" class="list-item" onclick="openCity(event, 'channel3')">
+                    <img src="./images/_sidebar/icon/icon-sport@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-sport_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">體育游戏</span>
+                </a>
+                <a href="#channel4" class="list-item" onclick="openCity(event, 'channel4')">
+                    <img src="./images/_sidebar/icon/icon-slot@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-slot_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">电子游戏</span>
+                </a>
+                <a href="#channel5" class="list-item" onclick="openCity(event, 'channel5')">
+                    <img src="./images/_sidebar/icon/icon-ball@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-ball_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">彩球游戏</span>
+                </a>
+                <a href="#channel6" class="list-item" onclick="openCity(event, 'channel6')">
+                    <img src="./images/_sidebar/icon/icon-fish@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-fish_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">捕魚游戏</span>
+                </a>
+                <a href="#channel7" class="list-item" onclick="openCity(event, 'channel7')">
+                    <img src="./images/_sidebar/icon/icon-battle@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-battle_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">對戰游戏</span>
+                </a>
+                <a href="#channel8" class="list-item" onclick="openCity(event, 'channel8')">
+                    <img src="./images/_sidebar/icon/icon-esport@2x.png" alt="" class="list-item__icon">
+                    <img src="./images/_sidebar/icon/icon-esport_active@2x.png" alt=""
+                        class="list-item__icon list-item__icon--active">
+                    <span class="list-item__text">電競游戏</span>
+                </a>
+            </div>
+            <div id="channel1" class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="text_box">
+                        <h2>APP download</h2>
+                        <hr>
+                        <h5>支持IOS & Android 所有移動設備</h5>
+                        <p>原生APP支援所有移動端,提供體育、電子、 真人、彩票、棋牌遊戲,業內盡顯流暢、完美操作的 娛樂城APP掃碼即可下載,即刻擁有。 </p>
+                        <div class="download-box">
+                            <div class="download-box__item">
+                                <h5 class="item-title">IOS</h5>
+                                <div class="item-icon">
+                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
+                                </div>
+                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                            </div>
+                            <div class="download-box__item">
+                                <h5 class="item-title">Android</h5>
+                                <div class="item-icon">
+                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
+                                </div>
+                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/intro-pic03.jpg">
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/app.png" alt="">
+                        <img class="d-block product-img animation-element slide-down slide-down-rt"
+                            src="./images/app_b1.png" alt="">
+                        <img class="d-block product-img animation-element slide-down slide-down-lf"
+                            src="./images/app_b2.png" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/intro-pic04.jpg">
+            </div>
+            <div id="channel2" class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="text_box">
+                        <h2>APP download</h2>
+                        <hr>
+                        <h5>支持IOS & Android 所有移動設備</h5>
+                        <p>原生APP支援所有移動端,提供體育、電子、 真人、彩票、棋牌遊戲,業內盡顯流暢、完美操作的 娛樂城APP掃碼即可下載,即刻擁有。 </p>
+                        <div class="download-box">
+                            <div class="download-box__item">
+                                <h5 class="item-title">IOS</h5>
+                                <div class="item-icon">
+                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
+                                </div>
+                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                            </div>
+                            <div class="download-box__item">
+                                <h5 class="item-title">Android</h5>
+                                <div class="item-icon">
+                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
+                                </div>
+                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="./images/intro-pic05.jpg">
-                </div>
+                <div class="col-sm-12 col-md-6">
 
-            </section>
+                </div>
+            </div>
         </div>
     </section>
+    <section class="intro">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12">
+                    <img class="con-title" src="./images/title-03@2x.png" alt="">
+                </div>
+            </div>
+            <swiper-container class="mySwiper" space-between="16" slides-per-view="3" autoplay-delay="2500"
+                autoplay-disable-on-interaction="false" loop="true">
+                <swiper-slide>
+                    <div class="slide-img">
+                        <img src="./images/intro-pic01.png" class="slide-img__img">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-img">
+                        <img src="./images/intro-pic02.png" class="slide-img__img">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-img">
+                        <img src="./images/intro-pic03.png" class="slide-img__img">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-img">
+                        <img src="./images/intro-pic04.png" class="slide-img__img">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide-img">
+                        <img src="./images/intro-pic05.png" class="slide-img__img">
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+
+    </section>
+
     <div class="footer">
         <div>© 2016 金富發. All Rights Reserved</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
 
         var $animation_elements = $('.animation-element');
@@ -290,54 +415,7 @@
         $window.on('scroll resize', check_if_in_view);
         $window.trigger('scroll');
 
-        $(document).ready(function () {
-            $('.myslick').slick({
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 15000,
-                cssEase: 'linear',
-                pauseOnFocus: true,
-                pauseOnHover: true,
-                arrows: false,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    }
-                ]
-            });
-        });
 
-        function jdSlider() {
-            if ($('.main_slider div').length > 1) {
-                $('.main_slider div:last').fadeOut(2000, function () {
-                    $(this).prependTo('.main_slider').show();
-                });
-            }
-        }
-
-        setInterval(jdSlider, 2000);
 
 
         function showPromotions() {
@@ -357,6 +435,28 @@
                 popup.style.display = 'none';
             }
         }
+
+        //show/hide
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName('list-item');
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                    ' active',
+                    ''
+                );
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            evt.currentTarget.className += ' active';
+
+            //scroll animation
+        }
+
+
     </script>
 </body>
 

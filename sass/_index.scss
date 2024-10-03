@@ -64,7 +64,19 @@ section {
 }
 
 .app-download {
-  background-image: url('../images/block_bg_01.png');
+  background-image: url('../images/block_bg_01.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.intro {
+  background-image: url('../images/block_bg_03.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.game-box {
+  background-image: url('../images/block_bg_02.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -118,6 +130,71 @@ section {
       &__img {
         display: block;
         width: 100%;
+      }
+    }
+  }
+}
+@mixin animation-order(
+  $name: zoomIn,
+  $duration: 700ms,
+  $fill-mode: both,
+  $timing-function: ease-in-out,
+  $delay: 100ms
+) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: $fill-mode;
+  animation-timing-function: $timing-function;
+  animation-delay: calc(var(--animation-order) * #{$delay});
+}
+.sidebar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  .list-item {
+    width: 20%;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: url('../images/_sidebar/icon/download_shadow@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    &__icon {
+      height: 40px;
+      display: block;
+      &--active {
+        display: none;
+      }
+    }
+    &__text {
+      font-size: 16px;
+      color: #ebe4c1;
+      padding: 0px 4px 4px;
+      font-weight: 500;
+      text-align: center;
+    }
+    &.active {
+      background: url('../images/_sidebar/icon/download_shadow_active@2x.png')
+        no-repeat center;
+      background-size: cover;
+      .list-item__icon {
+        display: none;
+        @include animation-order(zoomIn, 400ms, both, ease-in-out, 30ms);
+        &--active {
+          height: 44px;
+          display: block;
+        }
+      }
+      .list-item__text {
+        color: white;
       }
     }
   }
