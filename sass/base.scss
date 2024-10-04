@@ -115,9 +115,11 @@ li {
 }
 
 .img-container {
-  //home img
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  // height: 350px;
+  height: 100%;
   padding: 10px;
   position: relative;
 
@@ -179,12 +181,8 @@ li {
 
 .footer {
   color: #808080;
-  background-color: #333;
-  padding: 45px 30px;
-  img {
-    width: 15px;
-    margin-right: 5px;
-  }
+  background-color: #21357b;
+  padding: 30px;
 }
 
 /*

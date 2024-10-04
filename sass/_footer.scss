@@ -1,0 +1,30 @@
+.about-list {
+  display: flex;
+  justify-content: center;
+  &__item {
+    position: relative;
+    text-decoration: none;
+    .item-title {
+      color: #d5d5d5;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: calc(50% - 15%);
+      width: 1px;
+      height: 30%;
+      background-color: #eee;
+    }
+  }
+}
+.copyright {
+  text-align: center;
+}
+.footer-brand {
+  &__img {
+    display: block;
+    height: 40px;
+    filter: grayscale(1);
+  }
+}

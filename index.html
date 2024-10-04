@@ -70,6 +70,71 @@
                         <img src="./images/main_logo@3x.png">
                     </a>
                     <div class="d-flex align-items-center">
+                        <div class="inner-user">
+                            <div class="inner-user__user-m">
+                                <div class="user-m__icon" onclick="showUser()">
+                                    <div class="icon-img" style="
+                            background-image: url('./images/iconUser@2x.png');
+                          "></div>
+                                    <div id="show2" class="user-function" style="display:none;">
+                                        <ul class="function-list">
+                                            <a class="function-list__item" href="javascript:void(0);">
+                                                <div class="item-box">
+                                                    <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
+                                                    <span class="item-box__title">我的帳戶</span>
+                                                </div>
+                                            </a>
+                                            <a class="function-list__item" href="javascript:void(0);">
+                                                <div class="item-box">
+                                                    <img src="./images/transaction@2x.png" alt=""
+                                                        class="item-box__icon">
+                                                    <span class="item-box__title">充提紀錄</span>
+                                                </div>
+                                            </a>
+                                            <a class="function-list__item" href="javascript:void(0);">
+                                                <div class="item-box">
+                                                    <img src="./images/betting_record@2x.png" alt=""
+                                                        class="item-box__icon">
+                                                    <span class="item-box__title">投注紀錄</span>
+                                                </div>
+                                            </a>
+                                            <hr>
+                                            <a class="function-list__item" href="javascript:void(0);">
+                                                <div class="item-box">
+                                                    <img src="./images/information@2x.png" alt=""
+                                                        class="item-box__icon">
+                                                    <span class="item-box__title">銀行帳戶</span>
+                                                </div>
+                                            </a>
+                                            <a class="function-list__item" href="javascript:void(0);">
+                                                <div class="item-box">
+                                                    <img src="./images/information@2x.png" alt=""
+                                                        class="item-box__icon">
+                                                    <span class="item-box__title">會員信箱</span>
+                                                </div>
+                                            </a>
+                                            <li class="function-list__item">
+                                                <a href="javascript:void(0)" class="item-btn">登出</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="inner-user__info">
+                                    <div class="info-list">
+                                        <div class="info-list__item">
+                                            <span class="user-m__name">傳說中的劇場週</span>
+                                            <span class="list-text">账号: 22364789091</span>
+                                        </div>
+                                        <div class="info-list__item">
+                                            <span class="list-text price">
+                                                <div class="price-img"></div>
+                                                5274365.00元
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <form class="d-flex login-btn">
                             <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
                             <a class="btn login-btn__signin" href="javascript:void(0)">註冊</a>
@@ -97,7 +162,7 @@
             </div>
         </div>
         <div class="header-nav">
-            <div class="wrap fixed-top navbar-wrap">
+            <div class="wrap navbar-wrap">
                 <nav class="nav navbar-expand-md justify-content-between ">
                     <button class="navbar-toggler my-auto" type="button" data-toggle="collapse"
                         data-target="#navbar-ex1-collapse" aria-controls="#navbar-ex1-collapse" aria-expanded="false">
@@ -223,117 +288,252 @@
                 </div>
             </div>
             <div class="sidebar-list">
-                <a href="#channel1" class="list-item active" onclick="openCity(event, 'channel1')">
+                <a href="javascript:void(0);" class="list-item active" onclick="openCity(event, 'channel1')">
                     <img src="./images/_sidebar/icon/icon-hot@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-hot_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">热门游戏</span>
                 </a>
-                <a href="#channel2" class="list-item" onclick="openCity(event, 'channel2')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel2')">
                     <img src="./images/_sidebar/icon/icon-live@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-live_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">真人游戏</span>
                 </a>
-                <a href="#channel3" class="list-item" onclick="openCity(event, 'channel3')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel3')">
                     <img src="./images/_sidebar/icon/icon-sport@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-sport_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">體育游戏</span>
                 </a>
-                <a href="#channel4" class="list-item" onclick="openCity(event, 'channel4')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel4')">
                     <img src="./images/_sidebar/icon/icon-slot@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-slot_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">电子游戏</span>
                 </a>
-                <a href="#channel5" class="list-item" onclick="openCity(event, 'channel5')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel5')">
                     <img src="./images/_sidebar/icon/icon-ball@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-ball_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">彩球游戏</span>
                 </a>
-                <a href="#channel6" class="list-item" onclick="openCity(event, 'channel6')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel6')">
                     <img src="./images/_sidebar/icon/icon-fish@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-fish_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">捕魚游戏</span>
                 </a>
-                <a href="#channel7" class="list-item" onclick="openCity(event, 'channel7')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel7')">
                     <img src="./images/_sidebar/icon/icon-battle@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-battle_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">對戰游戏</span>
                 </a>
-                <a href="#channel8" class="list-item" onclick="openCity(event, 'channel8')">
+                <a href="javascript:void(0);" class="list-item" onclick="openCity(event, 'channel8')">
                     <img src="./images/_sidebar/icon/icon-esport@2x.png" alt="" class="list-item__icon">
                     <img src="./images/_sidebar/icon/icon-esport_active@2x.png" alt=""
                         class="list-item__icon list-item__icon--active">
                     <span class="list-item__text">電競游戏</span>
                 </a>
             </div>
-            <div id="channel1" class="row">
+            <div id="channel1" class="row game-channel">
                 <div class="col-sm-12 col-md-6">
-                    <div class="text_box">
-                        <h2>APP download</h2>
+                    <div class="game-intro">
+                        <img src="./images/game-title_hot@2x.png" alt="" class="game-intro__title">
                         <hr>
-                        <h5>支持IOS & Android 所有移動設備</h5>
-                        <p>原生APP支援所有移動端,提供體育、電子、 真人、彩票、棋牌遊戲,業內盡顯流暢、完美操作的 娛樂城APP掃碼即可下載,即刻擁有。 </p>
-                        <div class="download-box">
-                            <div class="download-box__item">
-                                <h5 class="item-title">IOS</h5>
-                                <div class="item-icon">
-                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
-                                </div>
-                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <div class="list-item__mask">
+                                        <p class="mask-title">系统维护中</p>
+                                    </div>
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">DG真人</span>
+                                </a>
                             </div>
-                            <div class="download-box__item">
-                                <h5 class="item-title">Android</h5>
-                                <div class="item-icon">
-                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
-                                </div>
-                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/sa.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">SA真人</span>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/spnix.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">新歐博真人</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <div class="img-container">
-                        <img class="d-block product-img animation-element slide-up" src="./images/app.png" alt="">
-                        <img class="d-block product-img animation-element slide-down slide-down-rt"
-                            src="./images/app_b1.png" alt="">
-                        <img class="d-block product-img animation-element slide-down slide-down-lf"
-                            src="./images/app_b2.png" alt="">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img1.png"
+                            alt="">
                     </div>
                 </div>
             </div>
-            <div id="channel2" class="row">
+            <div id="channel2" class="row game-channel" style="display: none;">
                 <div class="col-sm-12 col-md-6">
-                    <div class="text_box">
-                        <h2>APP download</h2>
+                    <div class="game-intro">
+                        <img src="./images/game-title_casino@2x.png" alt="" class="game-intro__title">
                         <hr>
-                        <h5>支持IOS & Android 所有移動設備</h5>
-                        <p>原生APP支援所有移動端,提供體育、電子、 真人、彩票、棋牌遊戲,業內盡顯流暢、完美操作的 娛樂城APP掃碼即可下載,即刻擁有。 </p>
-                        <div class="download-box">
-                            <div class="download-box__item">
-                                <h5 class="item-title">IOS</h5>
-                                <div class="item-icon">
-                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
-                                </div>
-                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
-                            </div>
-                            <div class="download-box__item">
-                                <h5 class="item-title">Android</h5>
-                                <div class="item-icon">
-                                    <img src="./images/appdownload_qr.png" alt="" class="item-icon__img">
-                                </div>
-                                <img src="./images/downloadbox_bg.png" alt="" class="item-bg">
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">DG真人</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6">
-
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img2.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel3" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_sport@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img3.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel4" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_slot@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img4.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel5" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_lottery@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img5.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel6" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_fishing@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img6.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel7" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_casino@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img7.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="channel8" class="row game-channel" style="display: none;">
+                <div class="col-sm-12 col-md-6">
+                    <div class="game-intro">
+                        <img src="./images/game-title_slot@2x.png" alt="" class="game-intro__title">
+                        <hr>
+                        <p>熱門遊戲,即刻擁有。 </p>
+                        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 game-list">
+                            <div class="col">
+                                <a class="px-1 py-2 list-item" href="javascript:void(0);">
+                                    <img src="./images/game-brand/dg.png" alt="" class="list-item__icon">
+                                    <span class="list-item__text">體育</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="img-container">
+                        <img class="d-block product-img animation-element slide-up" src="./images/game-box-img8.png"
+                            alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -378,7 +578,87 @@
     </section>
 
     <div class="footer">
-        <div>© 2016 金富發. All Rights Reserved</div>
+        <div class="container">
+            <div class="row row-cols-3 row-cols-lg-6 g-2 g-lg-3 footer-brand">
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/ob.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/mt.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/i8.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/atg.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/bng.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/bs.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/cg.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/db.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/dg.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/gd.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/game-brand/gr.png" alt="" class="footer-brand__img">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="about-list">
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">使用條款</div>
+                </a>
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">隱私政策</div>
+                </a>
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">免責聲明</div>
+                </a>
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">技術問題</div>
+                </a>
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">常見問題</div>
+                </a>
+                <a class="about-list__item" href="javascript:void(0);">
+                    <div class="item-title p-3">聯繫我們</div>
+                </a>
+            </div>
+            <div class="copyright">© 2016 金富發. All Rights Reserved</div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -435,27 +715,38 @@
                 popup.style.display = 'none';
             }
         }
-
+        function showUser() {
+            var popup = document.getElementById('show2');
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+            } else {
+                popup.style.display = 'none';
+            }
+        }
         //show/hide
         function openCity(evt, cityName) {
             // Declare all variables
             var i, tabcontent, tablinks;
 
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName('game-channel');
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = 'none';
+            }
+
             // Get all elements with class="tablinks" and remove the class "active"
             tablinks = document.getElementsByClassName('list-item');
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(
-                    ' active',
+                    'active',
                     ''
                 );
             }
 
             // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = 'flex';
             evt.currentTarget.className += ' active';
-
-            //scroll animation
         }
-
 
     </script>
 </body>

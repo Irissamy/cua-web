@@ -64,7 +64,7 @@ section {
 }
 
 .app-download {
-  background-image: url('../images/block_bg_01.jpg');
+  background-image: url('../images/block_bg_01_2.jpg');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -80,6 +80,81 @@ section {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+.game-intro {
+  height: 100%;
+  padding: 24px;
+  background-image: url('../images/game-section-bg.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__title {
+    display: block;
+    height: 64px;
+  }
+  .game-list {
+    .list-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 12px;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
+      border: 2px #ffffff70 solid;
+      box-shadow: #3f3f3f 4px 4px 0px 0px;
+      text-decoration: none;
+      &__icon {
+        height: 32px;
+        display: block;
+        &--active {
+          display: none;
+        }
+      }
+      &__text {
+        font-size: 12px;
+        color: #ebe4c1;
+        font-weight: 500;
+        text-align: center;
+      }
+      &__mask {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+        color: #fff;
+        .mask-title {
+          margin: 0px;
+          font-size: 12px;
+        }
+      }
+      &:hover {
+        background-image: linear-gradient(
+          to bottom,
+          #fdeed1 0%,
+          #f9dcb5 50%,
+          #d1924b 100%
+        );
+        border: 2px #fdeed1 solid;
+        box-shadow: #d89e5b 2px 2px 0px 0px;
+        transform: translate(2px, 2px);
+        .list-item__text {
+          color: #a36114;
+        }
+      }
+    }
+  }
 }
 .con-title {
   display: block;
@@ -134,19 +209,6 @@ section {
     }
   }
 }
-@mixin animation-order(
-  $name: zoomIn,
-  $duration: 700ms,
-  $fill-mode: both,
-  $timing-function: ease-in-out,
-  $delay: 100ms
-) {
-  animation-name: $name;
-  animation-duration: $duration;
-  animation-fill-mode: $fill-mode;
-  animation-timing-function: $timing-function;
-  animation-delay: calc(var(--animation-order) * #{$delay});
-}
 .sidebar-list {
   display: flex;
   justify-content: center;
@@ -163,7 +225,7 @@ section {
     border-radius: 12px;
     overflow: hidden;
     background: url('../images/_sidebar/icon/download_shadow@2x.png');
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -184,7 +246,7 @@ section {
     &.active {
       background: url('../images/_sidebar/icon/download_shadow_active@2x.png')
         no-repeat center;
-      background-size: cover;
+      background-size: 100%;
       .list-item__icon {
         display: none;
         @include animation-order(zoomIn, 400ms, both, ease-in-out, 30ms);
