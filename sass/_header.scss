@@ -323,57 +323,77 @@
   }
 }
 
-.game-menu-nav {
+.game-menu-mask {
   position: absolute;
   top: 100%;
   left: 0px;
   right: 0px;
-  display: none;
+  z-index: -1;
   padding: 16px;
   background: #000000b3;
   backdrop-filter: blur(4px);
-  .game-menu {
+}
+.game-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s;
+  &__item {
     display: flex;
-    flex-wrap: wrap;
-    &__item {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .item-brand {
+    display: flex;
+    align-items: center;
+    &__icon {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin-right: 8px;
-      margin-bottom: 8px;
-      &:last-child {
-        margin-right: 0px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
+      border: 2px #ffffff70 solid;
+      box-shadow: #7b90c8 0px 0px 9px 0px;
+      .icon-img {
+        display: block;
+        width: 70%;
       }
     }
-    .item-brand {
-      display: flex;
-      align-items: center;
-      &__icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        background-clip: padding-box, border-box;
-        background-origin: padding-box, border-box;
-        background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
-        border: 2px #ffffff70 solid;
-        box-shadow: #7b90c8 0px 0px 9px 0px;
-        .icon-img {
-          display: block;
-          width: 70%;
-        }
-      }
-      &__title {
-        font-size: 16px;
-        padding-left: 16px;
-        color: #fff;
-      }
+    &__title {
+      font-size: 16px;
+      padding-left: 16px;
+      color: #fff;
     }
-    .item-img {
+  }
+  .item-img {
+    display: block;
+    height: 200px;
+  }
+}
+
+.nav-item {
+  &:hover {
+    .game-menu-mask {
       display: block;
-      height: 200px;
+    }
+    .game-menu {
+      visibility: visible;
+      opacity: 1;
     }
   }
 }

@@ -69,52 +69,6 @@
                     <a class="navbar-brand modal-dialog-centered" href="index.html">
                         <img src="./images/main_logo@3x.png">
                     </a>
-                    <!-- <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle user-m__icon" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="icon-img" style="background-image: url('./images/iconUser@2x.png');"></div>
-                        </a>
-                        <ul class="dropdown-menu user-function" aria-labelledby="navbarDropdown">
-                            <li class="user-function__item">
-                                <a class="dropdown-item item-box" href="#">
-                                    <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
-                                    <span class="item-box__title">我的帳戶</span>
-                                </a>
-                            </li>
-                            <li class="user-function__item">
-                                <a class="dropdown-item item-box" href="#">
-                                    <img src="./images/transaction@2x.png" alt="" class="item-box__icon">
-                                    <span class="item-box__title">充值紀錄</span>
-                                </a>
-                            </li>
-                            <li class="user-function__item">
-                                <a class="dropdown-item item-box" href="#">
-                                    <img src="./images/betting_record@2x.png" alt="" class="item-box__icon">
-                                    <span class="item-box__title">投注紀錄</span>
-                                </a>
-                            </li>
-                            <li class="user-function__item">
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li class="user-function__item">
-                                <a class="dropdown-item item-box" href="#">
-                                    <img src="./images/information@2x.png" alt="" class="item-box__icon">
-                                    <span class="item-box__title">銀行帳戶</span>
-                                </a>
-                            </li>
-                            <li class="user-function__item">
-                                <a class="dropdown-item item-box" href="#">
-                                    <img src="./images/information@2x.png" alt="" class="item-box__icon">
-                                    <span class="item-box__title">會員信箱</span>
-                                </a>
-                            </li>
-                            <li class="user-function__item">
-                                <a class="item-box" href="#">
-                                    <div class="item-btn">登出</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
                     <div class="d-flex align-items-center">
                         <div class="inner-user">
                             <div class="inner-user__user-m">
@@ -123,7 +77,8 @@
                                     <div class="icon-img" style="background-image: url('./images/iconUser@2x.png');">
                                     </div>
                                 </a>
-                                <ul class="dropdown-menu user-function" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu dropdown-menu-dark user-function"
+                                    aria-labelledby="navbarDropdown">
                                     <li class="user-function__item">
                                         <a class="dropdown-item item-box" href="#">
                                             <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
@@ -163,53 +118,6 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <!-- <div class="user-m__icon">
-                                    <a class="icon-img" style="
-                            background-image: url('./images/iconUser@2x.png');
-                          "></a>
-                                    <div class="user-function" style="display: none;">
-                                        <ul class="function-list">
-                                            <li class="function-list__item">
-                                                <div class="item-box">
-                                                    <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
-                                                    <span class="item-box__title">我的帳戶</span>
-                                                </div>
-                                            </li>
-                                            <li class="function-list__item">
-                                                <div class="item-box">
-                                                    <img src="./images/transaction@2x.png" alt=""
-                                                        class="item-box__icon">
-                                                    <span class="item-box__title">充提紀錄</span>
-                                                </div>
-                                            </li>
-                                            <li class="function-list__item">
-                                                <div class="item-box">
-                                                    <img src="./images/betting_record@2x.png" alt=""
-                                                        class="item-box__icon">
-                                                    <span class="item-box__title">投注紀錄</span>
-                                                </div>
-                                            </li>
-                                            <hr>
-                                            <li class="function-list__item">
-                                                <div class="item-box">
-                                                    <img src="./images/information@2x.png" alt=""
-                                                        class="item-box__icon">
-                                                    <span class="item-box__title">銀行帳戶</span>
-                                                </div>
-                                            </li>
-                                            <li class="function-list__item">
-                                                <div class="item-box">
-                                                    <img src="./images/information@2x.png" alt=""
-                                                        class="item-box__icon">
-                                                    <span class="item-box__title">會員信箱</span>
-                                                </div>
-                                            </li>
-                                            <li class="function-list__item">
-                                                <a href="javascript:void(0)" class="item-btn">登出</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div> -->
                                 <div class="inner-user__info">
                                     <div class="info-list">
                                         <div class="info-list__item">
@@ -245,7 +153,6 @@
                         </a>
                         <ul id="show" class="lang-list" style="display: none;">
                             <li class="lang-list__item lang-list__item--active">
-                                <!-- <img src="images/common/image/icon/icon_exclamation-gold@2x.png" alt="" class="item-check"> -->
                                 <span class="item-title">繁體中文</span>
                             </li>
                             <li class="lang-list__item">
@@ -275,12 +182,126 @@
                         <ul class="nav navbar-nav justify-content-start">
                             <li class="nav-item modal-dialog-centered">
                                 <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">熱門游戏</a>
+                                <ul class="game-menu">
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG真人</span>
+                                        </div>
+                                        <img src="./images/game-box-img1.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG真人</span>
+                                        </div>
+                                        <img src="./images/game-box-img1.png" alt="" class="item-img">
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item modal-dialog-centered">
                                 <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">真人游戏</a>
+                                <ul class="game-menu">
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG真人2</span>
+                                        </div>
+                                        <img src="./images/game-box-img1.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG真人2</span>
+                                        </div>
+                                        <img src="./images/game-box-img1.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG真人2</span>
+                                        </div>
+                                        <img src="./images/game-box-img1.png" alt="" class="item-img">
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item modal-dialog-centered">
                                 <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">體育游戏</a>
+                                <ul class="game-menu">
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                    <li class="game-menu__item">
+                                        <div class="item-brand">
+                                            <div class="item-brand__icon">
+                                                <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                            </div>
+                                            <span class="item-brand__title">DG體育</span>
+                                        </div>
+                                        <img src="./images/game-box-img3.png" alt="" class="item-img">
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item modal-dialog-centered">
                                 <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">电子游戏</a>
@@ -295,50 +316,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="game-menu-nav">
-                <div class="container">
-                    <ul id="menu1" class="game-menu">
-                        <li class="game-menu__item">
-                            <div class="item-brand">
-                                <div class="item-brand__icon">
-                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
-                                </div>
-                                <span class="item-brand__title">DG真人</span>
-                            </div>
-                            <img src="./images/game-box-img1.png" alt="" class="item-img">
-                        </li>
-                        <li class="game-menu__item">
-                            <div class="item-brand">
-                                <div class="item-brand__icon">
-                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
-                                </div>
-                                <span class="item-brand__title">DG真人</span>
-                            </div>
-                            <img src="./images/game-box-img1.png" alt="" class="item-img">
-                        </li>
-                    </ul>
-                    <ul id="menu2" class="game-menu">
-                        <li class="game-menu__item">
-                            <div class="item-brand">
-                                <div class="item-brand__icon">
-                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
-                                </div>
-                                <span class="item-brand__title">DG真人</span>
-                            </div>
-                            <img src="./images/game-box-img1.png" alt="" class="item-img">
-                        </li>
-                        <li class="game-menu__item">
-                            <div class="item-brand">
-                                <div class="item-brand__icon">
-                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
-                                </div>
-                                <span class="item-brand__title">DG真人</span>
-                            </div>
-                            <img src="./images/game-box-img1.png" alt="" class="item-img">
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div id="nav-mask" class="game-menu-mask" style="display:none;"></div>
         </div>
     </div>
 
@@ -860,14 +838,25 @@
                 popup.style.display = 'none';
             }
         }
-        // function showUser() {
-        //     var popup = document.getElementById('show2');
-        //     if (popup.style.display === 'none') {
-        //         popup.style.display = 'block';
-        //     } else {
-        //         popup.style.display = 'none';
-        //     }
-        // }
+        function setMask() {
+            let navMask = document.getElementById('nav-mask');
+            let navItem = document.querySelectorAll('.nav-item');
+            let navMenu = document.querySelectorAll('.game-menu');
+            console.log(navItem, navMenu, navMask)
+            for (let i = 0; i < navItem.length; i++) {
+                navItem[i].addEventListener("mouseover", function () {
+
+                    if (navMenu[i]) {
+                        navMask.style.display = 'block';
+                        navMask.style.height = `${navMenu[i].offsetHeight + 16}px`;
+                    } else {
+                        navMask.style.display = 'none';
+                        navMask.style.height = 0;
+                    }
+                });
+            }
+        }
+        setMask()
         //show/hide
         function openCity(evt, cityName) {
             // Declare all variables
@@ -892,6 +881,7 @@
             document.getElementById(cityName).style.display = 'flex';
             evt.currentTarget.className += ' active';
         }
+
 
     </script>
 </body>

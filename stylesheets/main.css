@@ -1138,36 +1138,45 @@ All css below is facultative, except for:
   color: #fff;
 }
 
-.game-menu-nav {
+.game-menu-mask {
   position: absolute;
   top: 100%;
   left: 0px;
   right: 0px;
-  display: none;
+  z-index: -1;
   padding: 16px;
   background: rgba(0, 0, 0, 0.7019607843);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
-.game-menu-nav .game-menu {
+
+.game-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
   display: flex;
   flex-wrap: wrap;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s;
 }
-.game-menu-nav .game-menu__item {
+.game-menu__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 8px;
   margin-bottom: 8px;
 }
-.game-menu-nav .game-menu__item:last-child {
+.game-menu__item:last-child {
   margin-right: 0px;
 }
-.game-menu-nav .game-menu .item-brand {
+.game-menu .item-brand {
   display: flex;
   align-items: center;
 }
-.game-menu-nav .game-menu .item-brand__icon {
+.game-menu .item-brand__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1180,18 +1189,26 @@ All css below is facultative, except for:
   border: 2px rgba(255, 255, 255, 0.4392156863) solid;
   box-shadow: #7b90c8 0px 0px 9px 0px;
 }
-.game-menu-nav .game-menu .item-brand__icon .icon-img {
+.game-menu .item-brand__icon .icon-img {
   display: block;
   width: 70%;
 }
-.game-menu-nav .game-menu .item-brand__title {
+.game-menu .item-brand__title {
   font-size: 16px;
   padding-left: 16px;
   color: #fff;
 }
-.game-menu-nav .game-menu .item-img {
+.game-menu .item-img {
   display: block;
   height: 200px;
+}
+
+.nav-item:hover .game-menu-mask {
+  display: block;
+}
+.nav-item:hover .game-menu {
+  visibility: visible;
+  opacity: 1;
 }
 
 .login-btn__login {
