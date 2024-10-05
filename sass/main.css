@@ -1193,6 +1193,11 @@ All css below is facultative, except for:
   opacity: 1;
 }
 
+@media (max-width: 980px) {
+  .header-nav {
+    display: none;
+  }
+}
 .login-btn__login {
   background: linear-gradient(135deg, #e9e094, #6f9567 80%);
 }

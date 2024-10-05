@@ -171,14 +171,14 @@
         </div>
         <div class="header-nav">
             <div class="wrap navbar-wrap">
-                <nav class="nav navbar-expand-md justify-content-between ">
-                    <button class="navbar-toggler my-auto" type="button" data-toggle="collapse"
-                        data-target="#navbar-ex1-collapse" aria-controls="#navbar-ex1-collapse" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                            class="icon-bar"></span><span class="icon-bar"></span>
+                <div class="nav navbar-expand-md justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-ex1-collapse" aria-controls="navbar-ex1-collapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- 導覽內容列 -->
-                    <div class="collapse navbar-collapse navbar-ex1-collapse" id="navbar-ex1-collapse">
+                    <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
                         <ul class="nav navbar-nav justify-content-start">
                             <li class="nav-item modal-dialog-centered">
                                 <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">熱門游戏</a>
@@ -314,7 +314,7 @@
                             </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             </div>
             <div id="nav-mask" class="game-menu-mask" style="display:none;"></div>
         </div>
@@ -853,6 +853,10 @@
                         navMask.style.display = 'none';
                         navMask.style.height = 0;
                     }
+                });
+                navItem[i].addEventListener("mouseout", function () {
+                    navMask.style.display = 'none';
+                    navMask.style.height = 0;
                 });
             }
         }
