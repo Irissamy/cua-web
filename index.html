@@ -69,56 +69,147 @@
                     <a class="navbar-brand modal-dialog-centered" href="index.html">
                         <img src="./images/main_logo@3x.png">
                     </a>
+                    <!-- <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle user-m__icon" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="icon-img" style="background-image: url('./images/iconUser@2x.png');"></div>
+                        </a>
+                        <ul class="dropdown-menu user-function" aria-labelledby="navbarDropdown">
+                            <li class="user-function__item">
+                                <a class="dropdown-item item-box" href="#">
+                                    <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
+                                    <span class="item-box__title">我的帳戶</span>
+                                </a>
+                            </li>
+                            <li class="user-function__item">
+                                <a class="dropdown-item item-box" href="#">
+                                    <img src="./images/transaction@2x.png" alt="" class="item-box__icon">
+                                    <span class="item-box__title">充值紀錄</span>
+                                </a>
+                            </li>
+                            <li class="user-function__item">
+                                <a class="dropdown-item item-box" href="#">
+                                    <img src="./images/betting_record@2x.png" alt="" class="item-box__icon">
+                                    <span class="item-box__title">投注紀錄</span>
+                                </a>
+                            </li>
+                            <li class="user-function__item">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="user-function__item">
+                                <a class="dropdown-item item-box" href="#">
+                                    <img src="./images/information@2x.png" alt="" class="item-box__icon">
+                                    <span class="item-box__title">銀行帳戶</span>
+                                </a>
+                            </li>
+                            <li class="user-function__item">
+                                <a class="dropdown-item item-box" href="#">
+                                    <img src="./images/information@2x.png" alt="" class="item-box__icon">
+                                    <span class="item-box__title">會員信箱</span>
+                                </a>
+                            </li>
+                            <li class="user-function__item">
+                                <a class="item-box" href="#">
+                                    <div class="item-btn">登出</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
                     <div class="d-flex align-items-center">
                         <div class="inner-user">
                             <div class="inner-user__user-m">
-                                <div class="user-m__icon" onclick="showUser()">
-                                    <div class="icon-img" style="
+                                <a class="nav-link dropdown-toggle user-m__icon" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="icon-img" style="background-image: url('./images/iconUser@2x.png');">
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu user-function" aria-labelledby="navbarDropdown">
+                                    <li class="user-function__item">
+                                        <a class="dropdown-item item-box" href="#">
+                                            <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
+                                            <span class="item-box__title">我的帳戶</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-function__item">
+                                        <a class="dropdown-item item-box" href="#">
+                                            <img src="./images/transaction@2x.png" alt="" class="item-box__icon">
+                                            <span class="item-box__title">充值紀錄</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-function__item">
+                                        <a class="dropdown-item item-box" href="#">
+                                            <img src="./images/betting_record@2x.png" alt="" class="item-box__icon">
+                                            <span class="item-box__title">投注紀錄</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-function__item">
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li class="user-function__item">
+                                        <a class="dropdown-item item-box" href="#">
+                                            <img src="./images/information@2x.png" alt="" class="item-box__icon">
+                                            <span class="item-box__title">銀行帳戶</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-function__item">
+                                        <a class="dropdown-item item-box" href="#">
+                                            <img src="./images/information@2x.png" alt="" class="item-box__icon">
+                                            <span class="item-box__title">會員信箱</span>
+                                        </a>
+                                    </li>
+                                    <li class="user-function__item">
+                                        <a class="item-box" href="#">
+                                            <div class="item-btn">登出</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- <div class="user-m__icon">
+                                    <a class="icon-img" style="
                             background-image: url('./images/iconUser@2x.png');
-                          "></div>
-                                    <div id="show2" class="user-function" style="display:none;">
+                          "></a>
+                                    <div class="user-function" style="display: none;">
                                         <ul class="function-list">
-                                            <a class="function-list__item" href="javascript:void(0);">
+                                            <li class="function-list__item">
                                                 <div class="item-box">
                                                     <img src="./images/iconMember@2x.png" alt="" class="item-box__icon">
                                                     <span class="item-box__title">我的帳戶</span>
                                                 </div>
-                                            </a>
-                                            <a class="function-list__item" href="javascript:void(0);">
+                                            </li>
+                                            <li class="function-list__item">
                                                 <div class="item-box">
                                                     <img src="./images/transaction@2x.png" alt=""
                                                         class="item-box__icon">
                                                     <span class="item-box__title">充提紀錄</span>
                                                 </div>
-                                            </a>
-                                            <a class="function-list__item" href="javascript:void(0);">
+                                            </li>
+                                            <li class="function-list__item">
                                                 <div class="item-box">
                                                     <img src="./images/betting_record@2x.png" alt=""
                                                         class="item-box__icon">
                                                     <span class="item-box__title">投注紀錄</span>
                                                 </div>
-                                            </a>
+                                            </li>
                                             <hr>
-                                            <a class="function-list__item" href="javascript:void(0);">
+                                            <li class="function-list__item">
                                                 <div class="item-box">
                                                     <img src="./images/information@2x.png" alt=""
                                                         class="item-box__icon">
                                                     <span class="item-box__title">銀行帳戶</span>
                                                 </div>
-                                            </a>
-                                            <a class="function-list__item" href="javascript:void(0);">
+                                            </li>
+                                            <li class="function-list__item">
                                                 <div class="item-box">
                                                     <img src="./images/information@2x.png" alt=""
                                                         class="item-box__icon">
                                                     <span class="item-box__title">會員信箱</span>
                                                 </div>
-                                            </a>
+                                            </li>
                                             <li class="function-list__item">
                                                 <a href="javascript:void(0)" class="item-btn">登出</a>
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="inner-user__info">
                                     <div class="info-list">
                                         <div class="info-list__item">
@@ -134,6 +225,16 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="core-function">
+                            <a class="core-function__item" href="javascript:void(0);">
+                                <img src="./images/ic_recharge@2x.png" alt="" class="item-icon">
+                                <span class="item-title">充值</span>
+                            </a>
+                            <a class="core-function__item" href="javascript:void(0);">
+                                <img src="./images/ic_withdraw@2x.png" alt="" class="item-icon">
+                                <span class="item-title">提款</span>
+                            </a>
                         </div>
                         <form class="d-flex login-btn">
                             <a class="btn login-btn__login" href="javascript:void(0)">登入</a>
@@ -193,6 +294,50 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+            <div class="game-menu-nav">
+                <div class="container">
+                    <ul id="menu1" class="game-menu">
+                        <li class="game-menu__item">
+                            <div class="item-brand">
+                                <div class="item-brand__icon">
+                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                </div>
+                                <span class="item-brand__title">DG真人</span>
+                            </div>
+                            <img src="./images/game-box-img1.png" alt="" class="item-img">
+                        </li>
+                        <li class="game-menu__item">
+                            <div class="item-brand">
+                                <div class="item-brand__icon">
+                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                </div>
+                                <span class="item-brand__title">DG真人</span>
+                            </div>
+                            <img src="./images/game-box-img1.png" alt="" class="item-img">
+                        </li>
+                    </ul>
+                    <ul id="menu2" class="game-menu">
+                        <li class="game-menu__item">
+                            <div class="item-brand">
+                                <div class="item-brand__icon">
+                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                </div>
+                                <span class="item-brand__title">DG真人</span>
+                            </div>
+                            <img src="./images/game-box-img1.png" alt="" class="item-img">
+                        </li>
+                        <li class="game-menu__item">
+                            <div class="item-brand">
+                                <div class="item-brand__icon">
+                                    <img src="./images/game-brand/dg.png" alt="" class="icon-img">
+                                </div>
+                                <span class="item-brand__title">DG真人</span>
+                            </div>
+                            <img src="./images/game-box-img1.png" alt="" class="item-img">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -715,14 +860,14 @@
                 popup.style.display = 'none';
             }
         }
-        function showUser() {
-            var popup = document.getElementById('show2');
-            if (popup.style.display === 'none') {
-                popup.style.display = 'block';
-            } else {
-                popup.style.display = 'none';
-            }
-        }
+        // function showUser() {
+        //     var popup = document.getElementById('show2');
+        //     if (popup.style.display === 'none') {
+        //         popup.style.display = 'block';
+        //     } else {
+        //         popup.style.display = 'none';
+        //     }
+        // }
         //show/hide
         function openCity(evt, cityName) {
             // Declare all variables

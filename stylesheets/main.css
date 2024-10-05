@@ -713,20 +713,32 @@ All css below is facultative, except for:
 .modal-header {
   background: linear-gradient(
     270deg,
-    #0b5257,
-    #2e7e83 20%,
-    #7acbd0 50%,
+    #314ba4,
+    #4264d9 20%,
+    #5477ea 50%,
     #d8f0f1 68%,
-    #2e7e83 85%,
-    #0b5257 100%
+    #4264d9 85%,
+    #314ba4 100%
   );
 }
 .modal-header .modal-title {
+  color: #3b3538;
   margin: 0 auto;
+}
+.modal-header .btn-close {
+  color: #fff;
 }
 
 .modal-open {
   overflow: hidden;
+}
+
+.modal-body .btn-submit {
+  background-color: transparent;
+  background-image: url('../images/btn-primary-bg-sq@2x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .tab-panel {
@@ -769,12 +781,12 @@ All css below is facultative, except for:
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
-  border-color: #2e7e83;
-  color: #333;
+  border-color: #314ba4;
+  color: #3b3538;
   background: linear-gradient(145deg, #fff, rgba(193, 195, 198, 0.7));
   box-shadow: inset 2px 2px 4px #d9dade, inset -2px -2px 4px #fff,
     2px 2px 4px #d9dade;
-  border: 2px solid #009f41;
+  border: 2px solid #314ba4;
 }
 .tab-panel .panel-group {
   padding: 0 24px;
@@ -786,6 +798,7 @@ All css below is facultative, except for:
 }
 .tab-panel .panel-group .panel {
   display: none;
+  color: #3b3538;
 }
 .tab-panel .panel-group .panel.active {
   display: block;
@@ -864,13 +877,13 @@ All css below is facultative, except for:
 .lang-list::before {
   content: '';
   position: absolute;
-  top: -16px;
-  right: 16px;
+  top: -12px;
+  right: 12px;
   z-index: 1;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 16px 16px 16px;
+  border-width: 0 12px 12px 12px;
   border-color: transparent transparent rgba(0, 0, 0, 0.7019607843) transparent;
   line-height: 0px;
 }
@@ -1007,26 +1020,58 @@ All css below is facultative, except for:
 .inner-user__info .info-list__rt {
   justify-content: flex-start;
 }
+.inner-user .dropdown-toggle::after {
+  display: none;
+}
 
 .user-function {
-  position: absolute;
-  top: 72px;
-  right: -8px;
   z-index: 1;
   width: 200px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.7019607843);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 .user-function::before {
   content: '';
   position: absolute;
-  top: -16px;
-  right: 16px;
+  top: -12px;
+  left: 12px;
   z-index: 1;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 16px 16px 16px;
+  border-width: 0 12px 12px 12px;
   border-color: transparent transparent rgba(0, 0, 0, 0.7019607843) transparent;
   line-height: 0px;
+}
+.user-function__item .item-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.user-function__item .item-box__icon {
+  display: block;
+  height: 30px;
+}
+.user-function__item .item-box__title {
+  padding-left: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+.user-function__item .item-btn {
+  display: block;
+  width: 60%;
+  padding: 0px 12px;
+  margin-top: 12px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1000px;
+  background-image: url(../images/btn-primary-bg@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .user-function .function-list {
   padding: 12px;
@@ -1069,6 +1114,84 @@ All css below is facultative, except for:
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.core-function {
+  display: flex;
+}
+.core-function__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  text-decoration: none;
+}
+.core-function__item .item-icon {
+  display: block;
+  height: 32px;
+}
+.core-function__item .item-title {
+  padding-top: 4px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+}
+
+.game-menu-nav {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  display: none;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.7019607843);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+.game-menu-nav .game-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.game-menu-nav .game-menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.game-menu-nav .game-menu__item:last-child {
+  margin-right: 0px;
+}
+.game-menu-nav .game-menu .item-brand {
+  display: flex;
+  align-items: center;
+}
+.game-menu-nav .game-menu .item-brand__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
+  border: 2px rgba(255, 255, 255, 0.4392156863) solid;
+  box-shadow: #7b90c8 0px 0px 9px 0px;
+}
+.game-menu-nav .game-menu .item-brand__icon .icon-img {
+  display: block;
+  width: 70%;
+}
+.game-menu-nav .game-menu .item-brand__title {
+  font-size: 16px;
+  padding-left: 16px;
+  color: #fff;
+}
+.game-menu-nav .game-menu .item-img {
+  display: block;
+  height: 200px;
 }
 
 .login-btn__login {

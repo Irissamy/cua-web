@@ -17,19 +17,32 @@
 .modal-header {
   background: linear-gradient(
     270deg,
-    #0b5257,
-    #2e7e83 20%,
-    #7acbd0 50%,
+    #314ba4,
+    #4264d9 20%,
+    #5477ea 50%,
     #d8f0f1 68%,
-    #2e7e83 85%,
-    #0b5257 100%
+    #4264d9 85%,
+    #314ba4 100%
   );
   .modal-title {
+    color: #3b3538;
     margin: 0 auto;
+  }
+  .btn-close {
+    color: #fff;
   }
 }
 .modal-open {
   overflow: hidden;
+}
+.modal-body {
+  .btn-submit {
+    background-color: transparent;
+    background-image: url('../images/btn-primary-bg-sq@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 .tab-panel {
   width: 100%;
@@ -68,12 +81,12 @@
         font-size: 16px;
         font-weight: 700;
         font-style: normal;
-        border-color: #2e7e83;
-        color: #333;
+        border-color: #314ba4;
+        color: #3b3538;
         background: linear-gradient(145deg, #fff, rgba(193, 195, 198, 0.7));
         box-shadow: inset 2px 2px 4px #d9dade, inset -2px -2px 4px #fff,
           2px 2px 4px #d9dade;
-        border: 2px solid #009f41;
+        border: 2px solid #314ba4;
       }
     }
   }
@@ -86,6 +99,7 @@
     overflow-y: auto;
     .panel {
       display: none;
+      color: #3b3538;
       &.active {
         display: block;
       }
