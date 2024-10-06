@@ -1,3 +1,6 @@
+.main-content {
+  padding-top: 110px;
+}
 .login-btn {
   &__login {
     background: linear-gradient(135deg, #e9e094, #6f9567 80%);
@@ -262,6 +265,9 @@ section {
 }
 
 @media (max-width: 980px) {
+  .main-content {
+    padding-top: 72px;
+  }
   .notice {
     &__outer {
       .quick-tips {

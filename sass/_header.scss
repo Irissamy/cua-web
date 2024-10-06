@@ -21,7 +21,6 @@
 
 .carousel-slider {
   position: relative;
-  padding-top: 110px;
 }
 .header-icon {
   width: 24px;
@@ -401,9 +400,6 @@
 @media (max-width: 980px) {
   .header-nav {
     display: none;
-  }
-  .carousel-slider {
-    padding-top: 72px;
   }
   .lang-list {
     right: 6px;
