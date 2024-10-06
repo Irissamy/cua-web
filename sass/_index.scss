@@ -239,7 +239,6 @@ section {
     &__text {
       font-size: 16px;
       color: #ebe4c1;
-      padding: 0px 4px 4px;
       font-weight: 500;
       text-align: center;
     }
@@ -258,6 +257,48 @@ section {
       .list-item__text {
         color: white;
       }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .notice {
+    &__outer {
+      .quick-tips {
+        &__item {
+          padding: 4px;
+        }
+      }
+      .outer-icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .app-download {
+    .text_box {
+      padding: 0px;
+    }
+  }
+  .sidebar-list {
+    .list-item {
+      height: 48px;
+      &__icon {
+        height: 36px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+      &.active {
+        .list-item__icon--active {
+          height: 40px;
+        }
+      }
+    }
+  }
+  .game-intro {
+    &__title {
+      height: 52px;
     }
   }
 }
