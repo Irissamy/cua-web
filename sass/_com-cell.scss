@@ -618,3 +618,43 @@
     padding-left: 8px;
   }
 }
+
+.amount-list {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-bottom: -2%
+
+  &__item {
+    width: 23.333%;
+    max-width: 23.333%;
+    height: 34px;
+    line-height: 34px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 0 2% 2% 0;
+    text-align: center;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    .item-text {
+      font-size: 12px;
+      color: #909abb;
+      margin: 0;
+    }
+    &--active {
+      background-color: #4d8aff;
+
+      .item-text {
+        color: #ffffff;
+      }
+    }
+    &--disabled {
+      cursor: not-allowed;
+      background-color: #eceef4;
+      .item-text {
+        color: #909abb;
+      }
+    }
+  }
+}

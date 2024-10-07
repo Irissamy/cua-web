@@ -1588,6 +1588,42 @@ input[type=number] {
   padding-left: 8px;
 }
 
+.amount-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.amount-list__item {
+  width: 23.333%;
+  max-width: 23.333%;
+  height: 34px;
+  line-height: 34px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 0 2% 2% 0;
+  text-align: center;
+}
+.amount-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+.amount-list__item .item-text {
+  font-size: 12px;
+  color: #909abb;
+  margin: 0;
+}
+.amount-list__item--active {
+  background-color: #4d8aff;
+}
+.amount-list__item--active .item-text {
+  color: #ffffff;
+}
+.amount-list__item--disabled {
+  cursor: not-allowed;
+  background-color: #eceef4;
+}
+.amount-list__item--disabled .item-text {
+  color: #909abb;
+}
+
 .el-radio {
   display: flex;
   align-items: center;
