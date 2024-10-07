@@ -713,6 +713,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.form-control-plaintext {
+  color: #fff;
+}
+
 .btn {
   width: 100%;
   height: 44px;
@@ -841,6 +845,11 @@ input[type=number] {
 .btn-cancel:active, .btn-cancel:hover {
   background-color: #909abb !important;
   border-color: #909abb !important;
+}
+
+.btn-form {
+  width: auto;
+  height: auto;
 }
 
 .com-cell-list + .cell-list {
