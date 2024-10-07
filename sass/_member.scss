@@ -254,3 +254,108 @@
     }
   }
 }
+
+.withdraw-cell {
+  &__item {
+    margin-bottom: $space-sm;
+    background-color: #ffffff;
+    border-radius: $bod-default;
+    border: 1px solid #ffffff;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .cell {
+      padding: 0;
+    }
+    &--invalid {
+      border: 1px solid #ff3d3d;
+    }
+  }
+  &__content {
+    padding: $space-lg;
+    position: relative;
+  }
+  .btn-secondary {
+    height: 30px;
+  }
+  .btn {
+    margin-top: $space-lg;
+  }
+  .restore {
+    width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: $space-lg;
+    right: $space-md;
+    margin: 0;
+    font-size: 12px;
+    &__text {
+      margin: 0;
+    }
+    &__number {
+      display: none;
+    }
+    &--disabled {
+      opacity: 0.8;
+      color: #909abb;
+      background-color: #eceef4;
+      .restore__text {
+        display: none;
+      }
+      .restore__number {
+        color: #7f7f7f;
+        font-size: 14px;
+        display: inline-block;
+        opacity: 1 !important;
+      }
+    }
+  }
+}
+.withdraw-detailed {
+  .table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-bottom: $space-lg;
+    .tr {
+      .td {
+        font-size: 12px;
+        padding: $space-xs $space-lg;
+        color: #909abb;
+        white-space: nowrap;
+        &:first-child {
+          font-weight: 600;
+        }
+        &:last-child {
+          text-align: right;
+        }
+      }
+      &:nth-child(odd) {
+        background-color: #eef0f6;
+      }
+    }
+  }
+  .withdraw-detailed-bottom {
+    padding: $space-lg 0 0;
+    border-top: 1px solid rgba(255, 200, 97, 0.25);
+    .btn {
+      display: flex;
+      min-width: 134px;
+      font-size: 12px;
+      padding: 0px $space-sm;
+      margin: auto;
+    }
+  }
+  .alert {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #515561;
+    padding-bottom: 0;
+    &__text {
+      color: #515561;
+    }
+  }
+}

@@ -3357,4 +3357,104 @@ section {
   font-weight: 600;
   color: #ffffff;
   padding-right: 8px;
+}
+
+.withdraw-cell__item {
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+}
+.withdraw-cell__item:last-child {
+  margin-bottom: 0;
+}
+.withdraw-cell__item .cell {
+  padding: 0;
+}
+.withdraw-cell__item--invalid {
+  border: 1px solid #ff3d3d;
+}
+.withdraw-cell__content {
+  padding: 16px;
+  position: relative;
+}
+.withdraw-cell .btn-secondary {
+  height: 30px;
+}
+.withdraw-cell .btn {
+  margin-top: 16px;
+}
+.withdraw-cell .restore {
+  width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  margin: 0;
+  font-size: 12px;
+}
+.withdraw-cell .restore__text {
+  margin: 0;
+}
+.withdraw-cell .restore__number {
+  display: none;
+}
+.withdraw-cell .restore--disabled {
+  opacity: 0.8;
+  color: #909abb;
+  background-color: #eceef4;
+}
+.withdraw-cell .restore--disabled .restore__text {
+  display: none;
+}
+.withdraw-cell .restore--disabled .restore__number {
+  color: #7f7f7f;
+  font-size: 14px;
+  display: inline-block;
+  opacity: 1 !important;
+}
+
+.withdraw-detailed .table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+.withdraw-detailed .table .tr .td {
+  font-size: 12px;
+  padding: 4px 16px;
+  color: #909abb;
+  white-space: nowrap;
+}
+.withdraw-detailed .table .tr .td:first-child {
+  font-weight: 600;
+}
+.withdraw-detailed .table .tr .td:last-child {
+  text-align: right;
+}
+.withdraw-detailed .table .tr:nth-child(odd) {
+  background-color: #eef0f6;
+}
+.withdraw-detailed .withdraw-detailed-bottom {
+  padding: 16px 0 0;
+  border-top: 1px solid rgba(255, 200, 97, 0.25);
+}
+.withdraw-detailed .withdraw-detailed-bottom .btn {
+  display: flex;
+  min-width: 134px;
+  font-size: 12px;
+  padding: 0px 8px;
+  margin: auto;
+}
+.withdraw-detailed .alert {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: #515561;
+  padding-bottom: 0;
+}
+.withdraw-detailed .alert__text {
+  color: #515561;
 } /*# sourceMappingURL=main.css.map */
