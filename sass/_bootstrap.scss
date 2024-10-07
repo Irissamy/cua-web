@@ -1,3 +1,37 @@
 .form-control-plaintext {
   color: #fff;
 }
+.nav-tabs {
+  .nav-link {
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    &.active {
+      color: #fff;
+      border: 1px solid #699dff;
+      background-color: #4d8aff;
+    }
+  }
+}
+.nav-pills {
+  .nav-link {
+    color: #909abb;
+    &.active {
+      background-color: #4d8aff;
+    }
+  }
+}
+.table {
+  color: #e4e4e4;
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgb(34 52 113);
+  color: #909bbb;
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: #656874;
+}

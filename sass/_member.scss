@@ -184,3 +184,73 @@
     }
   }
 }
+.mywallet-range {
+  font-size: 12px;
+  font-weight: 500;
+  color: #909abb;
+  padding-bottom: $space-sm;
+  margin-top: -$space-sm;
+  text-align: center;
+}
+.empty {
+  width: 100%;
+  .empty-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px $space-lg 0;
+    .empty-icon {
+      width: 100px;
+      height: 100px;
+      display: block;
+      mask-image: url('../images/icon_nodata@2x.png');
+      mask-size: contain;
+      mask-position: center;
+      mask-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    .empty-title {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.5;
+    }
+  }
+}
+.order-info-list {
+  display: flex;
+  align-items: center;
+  background: transparent
+    linear-gradient(
+      180deg,
+      #3c61e1 0%,
+      #375ad3 6%,
+      #3353c1 40%,
+      #375ad3 74%,
+      #3c61e1 96%,
+      #21357b 100%
+    )
+    0% 0% no-repeat;
+  height: 28px;
+  padding: $space-md $space-lg;
+  &__item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 50%;
+    &__title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      flex: 0 0 auto;
+    }
+    &__number {
+      @include text-ellipsis;
+      font-size: 14px;
+      font-weight: 600;
+      color: #ffffff;
+      padding-right: $space-sm;
+    }
+  }
+}
