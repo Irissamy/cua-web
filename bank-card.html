@@ -345,110 +345,144 @@
                     </div>
                     <div class="col-sm-12 col-md-9">
                         <div class="layout-content p-5">
-                            <h2 class="main-title">個人資料</h2>
+                            <h2 class="main-title">銀行帳戶</h2>
                             <hr>
-                            <div class="sub-title">基本資料</div>
-                            <form class="pt-3">
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">帳號</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="text" readonly class="form-control-plaintext"
-                                                value="22364789091">
-                                            <span class="form-text text-danger">
-                                                Must be 8-20 characters long.
-                                            </span>
+                            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">銀行帳戶</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                        aria-selected="false">新增銀行帳戶</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
+                                        <div class="bind-card ">
+                                            <div class="bind-card__item">
+                                                <div class="bank-card">
+                                                    <div class="bank-card__order">
+                                                        <span class="order-number">01</span>
+                                                    </div>
+                                                    <div class="bank-card__bank">
+                                                        <div class="bank-lf">
+                                                            <div class="bank-icon">
+                                                                <img class="bank-icon__img"
+                                                                    src="./images/bankLogo@2x.png">
+                                                            </div>
+                                                            <p class="bank-name">中国银行</p>
+                                                        </div>
+                                                        <div class="bank-rt">
+                                                            <a href="javascript:void(0)"
+                                                                class="detail-uploader btn btn-secondary rounded-pill"
+                                                                onclick="show9()">查看已上傳圖片
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bank-card__detail">
+                                                        <div class="detail-lf">
+                                                            <div class="detail-item">
+                                                                <span class="detail-item__title">开户网点：</span>
+                                                                <span class="detail-item__text">广州/深圳</span>
+                                                            </div>
+                                                            <div class="detail-item">
+                                                                <span class="detail-item__title">开户人：</span>
+                                                                <span class="detail-item__text">张三</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bank-card__account">
+                                                        <span class="account-number">7896 - **** - 1234</span>
+                                                        <label class="card-switch">
+                                                            <input class="card-switch__input" type="checkbox" checked>
+                                                            <span class="card-switch__slider">
+                                                                <span class="slider-text">启用</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bind-card__item">
+                                                <div class="bank-card">
+                                                    <div class="bank-card__order">
+                                                        <span class="order-number">02</span>
+                                                    </div>
+                                                    <div class="bank-card__bank">
+                                                        <div class="bank-lf">
+                                                            <div class="bank-icon">
+                                                                <img class="bank-icon__img"
+                                                                    src="./images/bankLogo@2x.png">
+                                                            </div>
+                                                            <p class="bank-name">中国银行</p>
+                                                        </div>
+                                                        <div class="bank-rt">
+                                                            <a href="javascript:void(0)"
+                                                                class="detail-uploader btn btn-secondary rounded-pill"
+                                                                onclick="show9()">查看已上傳圖片
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bank-card__detail">
+                                                        <div class="detail-lf">
+                                                            <div class="detail-item">
+                                                                <span class="detail-item__title">开户网点：</span>
+                                                                <span class="detail-item__text">广州/深圳</span>
+                                                            </div>
+                                                            <div class="detail-item">
+                                                                <span class="detail-item__title">开户人：</span>
+                                                                <span class="detail-item__text">张三</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bank-card__account">
+                                                        <span class="account-number">7896 - **** - 1234</span>
+                                                        <label class="card-switch">
+                                                            <input class="card-switch__input" type="checkbox" checked>
+                                                            <span class="card-switch__slider">
+                                                                <span class="slider-text">启用</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">真實姓名</label>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">銀行名稱</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>004 - 臺灣銀行</option>
+                                                <option value="1">005 - 臺灣土地銀行</option>
+                                                <option value="2">004 - 臺灣銀行</option>
+                                                <option value="3">005 - 臺灣土地銀行</option>
+                                            </select>
                                         </div>
-                                        <div class="col-10 d-flex">
-                                            <span class="form-text text-danger me-2">
-                                                未驗證
-                                            </span>
-                                            <button type=""
-                                                class="btn btn-secondary btn-form rounded-pill">身份驗證</button>
+                                        <div class="mb-3">
+                                            <label for="bankName" class="form-label">分行名稱</label>
+                                            <input type="text" class="form-control" value="">
                                         </div>
-                                    </div>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">戶名</label>
+                                            <input type="text" readonly class="form-control" value="王大明">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="account" class="form-label">帳號</label>
+                                            <input type="number" class="form-control" value="">
+                                        </div>
+                                        <div class="d-flex">
+                                            <button type="submit" class="btn btn-primary">送出</button>
+                                            <button type="button" class="btn btn-cancel">取消</button>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">生日</label>
-                                        </div>
-                                        <div class="col-10 d-flex">
-                                            <span class="form-text text-danger me-2">
-                                                未驗證
-                                            </span>
-                                            <button type=""
-                                                class="btn btn-secondary btn-form rounded-pill">身份驗證</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">身分證號</label>
-                                        </div>
-                                        <div class="col-10 d-flex">
-                                            <span class="form-text text-danger me-2">
-                                                未驗證
-                                            </span>
-                                            <button type=""
-                                                class="btn btn-secondary btn-form rounded-pill">身份驗證</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">錢包餘額</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="text" readonly class="form-control-plaintext" value="1,000">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">手機號碼</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <input type="text" readonly class="form-control-plaintext"
-                                                value="09123123123">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">登入密碼</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <button type=""
-                                                class="btn btn-secondary btn-form rounded-pill">修改密碼</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mb-2">
-                                    <div class="row g-3 align-items-start">
-                                        <div class="col-2">
-                                            <label for="" class="col-form-label">提領密碼</label>
-                                        </div>
-                                        <div class="col-10">
-                                            <button type=""
-                                                class="btn btn-secondary btn-form rounded-pill">修改密碼</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
