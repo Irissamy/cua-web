@@ -35,3 +35,37 @@ thead,
 tr {
   border-color: #656874;
 }
+.page-item {
+  .page-link {
+    color: #b8c3ea;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 8px;
+    .pre-icon,
+    .next-icon {
+      display: block;
+      width: 24px;
+      height: 24px;
+      mask-size: contain;
+      mask-position: center;
+      mask-repeat: no-repeat;
+      background-color: #b8c3ea;
+    }
+    .pre-icon {
+      mask-image: url('../images/icon_picker_left@2x.png');
+    }
+    .next-icon {
+      mask-image: url('../images/icon_picker_right@2x.png');
+    }
+  }
+  &.active {
+    .page-link {
+      background-color: #4d8aff;
+    }
+  }
+  &.disabled {
+    .page-link {
+      background-color: transparent;
+    }
+  }
+}
