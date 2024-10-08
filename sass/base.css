@@ -13,6 +13,10 @@ html {
   background-repeat: no-repeat;
   font-family: Microsoft JhengHei;
 }
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
 
 section {
   background-color: transparent;

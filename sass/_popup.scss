@@ -1,6 +1,7 @@
 .modal-dialog {
   min-width: calc(100% - 1rem);
-  z-index: 1050;
+  // z-index: 1050;
+  backdrop-filter: blur(0.5px);
 }
 .modal-content {
   width: 85%;
@@ -71,6 +72,90 @@
   background-color: #1f2c59;
   // color: #3b3538;
 }
+.xfe-content {
+  padding: 16px;
+  border-radius: 8px 8px 0px 0px;
+  background-color: #fff;
+  & + .modal-footer {
+    background-color: #fff;
+    border-radius: 0px 0px 8px 8px;
+  }
+}
+
+.xfe,
+.xfe-reg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  &__icon {
+    width: 78px;
+    height: 78px;
+    margin: $space-sm + $space-md auto $space-sm;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
+  &__title {
+    font-size: 22px;
+    margin: 0;
+    padding: 0px $space-md;
+    line-height: normal;
+    font-weight: 500;
+    color: #515561;
+  }
+  &__text {
+    font-size: 15px;
+    color: #909abb;
+    line-height: 22px;
+    margin: 0;
+    padding: $space-sm $space-md $space-md;
+  }
+}
+.xfe-reg {
+  padding-top: $space-md;
+}
+.converting {
+  .xfe__icon {
+    background-image: url('../images/gif_transform.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .xfe__title {
+    color: #06c170;
+  }
+}
+.success {
+  .xfe__icon,
+  .xfe-reg__icon {
+    background-image: url('../images/gif_done.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .xfe__title {
+    color: #06c170;
+  }
+}
+.danger {
+  .xfe__icon {
+    mask-image: url('../images/icon_fail@2x.png');
+    background-color: #ff3d3d;
+  }
+  .xfe__title {
+    color: #ff3d3d;
+  }
+}
+.warning {
+  .xfe__icon {
+    mask-image: url('../images/icon_mistake@2x.png');
+    background-color: #fc0;
+  }
+  .xfe__title {
+    color: #fded72;
+  }
+}
 .offcanvas-area {
   position: fixed;
   top: 30%;
@@ -84,6 +169,95 @@
     #314ba4 50%,
     #25366d 100%
   );
+}
+.regsuccess {
+  .modal-content {
+    background: transparent;
+    border: none;
+  }
+}
+.regsuccess-popup {
+  &__body {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin-bottom: $space-md;
+    background-image: url('../images/img_registration_success@2x.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -32px;
+  }
+  .regsuccess-info {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: $space-xl $space-lg;
+    &__user {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: $space-md;
+      overflow: hidden;
+      .user-title {
+        font-size: 14px;
+        color: #ffffff;
+        white-space: nowrap;
+      }
+      .user-id {
+        font-size: 14px;
+        color: #ffffff;
+      }
+    }
+    &__btn {
+      display: flex;
+      justify-content: center;
+      .btn-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        min-width: 66px;
+        margin-right: $space-xl;
+        &__icon {
+          width: 53px;
+          height: 53px;
+          margin-bottom: $space-sm;
+          .icon-img {
+            display: block;
+            width: 100%;
+          }
+        }
+        &__title {
+          text-align: center;
+          .title-text {
+            font-size: 12px;
+            color: #ffffff;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    padding: 0px $space-md;
+    .btn {
+      max-width: 178px;
+      height: 33px;
+      margin-right: $space-sm;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
 }
 @media (min-width: 576px) {
   .modal-dialog {

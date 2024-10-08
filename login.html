@@ -173,6 +173,45 @@
         </div>
     </div>
     <!-- 客服end -->
+    <!-- 註冊成功 -->
+    <div class="modal fade regsuccess" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="regsuccess-popup">
+                    <div class="regsuccess-popup__body">
+                        <div class="regsuccess-info translate-middle-x">
+                            <div class="regsuccess-info__user">
+                                <div class="user-title">会员账号：</div>
+                                <div class="user-id">BBBBBB1234</div>
+                            </div>
+                            <div class="regsuccess-info__btn">
+                                <a class="btn-item" href="javascript:void(0);">
+                                    <div class="btn-item__icon">
+                                        <img src="./images/registration_info@2x.png" alt="" class="icon-img">
+                                    </div>
+                                    <div class="btn-item__title">
+                                        <span class="title-text">去完善资料</span>
+                                    </div>
+                                </a>
+                                <a class="btn-item" href="index.html">
+                                    <div class="btn-item__icon">
+                                        <img src="./images/registration_home@2x.png" alt="" class="icon-img">
+                                    </div>
+                                    <div class="btn-item__title">
+                                        <span class="title-text">前往游戏</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="regsuccess-popup__footer">
+                        <a class="btn btn-primary rounded-pill btn-ripple" href="deposit.html">立即充值</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="login">
         <div class="container h-100">
             <div class="d-flex justify-content-center overflow-hidden h-100">
@@ -363,7 +402,8 @@
                                             <div class="btn-text">联系客服</div>
                                         </a>
                                     </div>
-                                    <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);">注册</a>
+                                    <a class="btn btn-primary rounded-pill btn-ripple" href="javascript:void(0);"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">注册</a>
                                 </div>
                                 <!-- sign in end -->
                             </div>
