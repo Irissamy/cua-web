@@ -370,10 +370,24 @@
       position: relative;
       min-height: 200px;
       padding: $space-lg 0px;
-      border-radius: 6px;
+      border-radius: 8px;
       border: 1px solid #eceef4;
       background-color: #ffffff;
       overflow: hidden;
+      &__empty {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .empty-text {
+          font-size: 14px;
+          color: #515561;
+          margin: 0;
+        }
+      }
       &__order {
         position: absolute;
         top: 0px;
@@ -530,6 +544,18 @@
           }
         }
       }
+    }
+  }
+}
+.cardboard {
+  width: 100%;
+  padding: 12px;
+  &__img {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 }

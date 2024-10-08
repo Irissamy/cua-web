@@ -65,7 +65,7 @@
                                         </a>
                                     </li>
                                     <li class="user-function__item">
-                                        <a class="dropdown-item item-box" href="#">
+                                        <a class="dropdown-item item-box" href="message.html">
                                             <img src="./images/information@2x.png" alt="" class="item-box__icon">
                                             <span class="item-box__title">會員信箱</span>
                                         </a>
@@ -324,7 +324,7 @@
                                     <img src="./images/iconMember@2x.png" alt="" class="item-icon">
                                     <span class="item-title">我的帳戶</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="deposit.html">
+                                <a class="list-group-item list-group-item-action" href="deposit-record.html">
                                     <img src="./images/transaction@2x.png" alt="" class="item-icon">
                                     <span class="item-title">充提紀錄</span>
                                 </a>
@@ -336,7 +336,7 @@
                                     <img src="./images/information@2x.png" alt="" class="item-icon">
                                     <span class="item-title">銀行帳戶</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="#">
+                                <a class="list-group-item list-group-item-action" href="message.html">
                                     <img src="./images/information@2x.png" alt="" class="item-icon">
                                     <span class="item-title">會員信箱</span>
                                 </a>
@@ -345,184 +345,66 @@
                     </div>
                     <div class="col-sm-12 col-md-9">
                         <div class="layout-content p-5">
-                            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                        aria-selected="true">充值</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                        aria-selected="false">充值紀錄</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
-                                    aria-labelledby="home-tab">
-                                    <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
-                                        <div class="mb-3">
-                                            <label for="channel" class="form-label">通道</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>公司入款</option>
-                                                <option value="1">微信</option>
-                                                <option value="2">公司入款</option>
-                                                <option value="3">微信</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="depositMount" class="form-label">金額</label>
-                                            <input type="number" class="form-control" value="">
-                                            <div class="amount-list mt-2">
-                                                <div class="amount-list__item amount-list__item--active">
-                                                    <p class="item-text">
-                                                        100
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item amount-list__item--disabled">
-                                                    <p class="item-text">
-                                                        300
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        500
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        1,000
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        3,000
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        5,000
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        8,000
-                                                    </p>
-                                                </div>
-                                                <div class="amount-list__item">
-                                                    <p class="item-text">
-                                                        10,000
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">送出</button>
-                                    </form>
+                            <h2 class="main-title">充值</h2>
+                            <hr>
+                            <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
+                                <div class="mb-3">
+                                    <label for="channel" class="form-label">通道</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>公司入款</option>
+                                        <option value="1">微信</option>
+                                        <option value="2">公司入款</option>
+                                        <option value="3">微信</option>
+                                    </select>
                                 </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                    <div class="interval-filter mt-3">
-                                        <select class="form-select mb-2" aria-label="Default select example">
-                                            <option selected>公司入款</option>
-                                            <option value="1">微信</option>
-                                            <option value="2">公司入款</option>
-                                            <option value="3">微信</option>
-                                        </select>
-                                        <div class="input-group mb-3">
-                                            <input type="datetime-local" class="form-control">
-                                            <span class="input-group-text">至</span>
-                                            <input type="datetime-local" class="form-control">
+                                <div class="mb-3">
+                                    <label for="depositMount" class="form-label">金額</label>
+                                    <input type="number" class="form-control" value="">
+                                    <div class="amount-list mt-2">
+                                        <div class="amount-list__item amount-list__item--active">
+                                            <p class="item-text">
+                                                100
+                                            </p>
                                         </div>
-                                        <nav class="nav nav-pills flex-column flex-sm-row">
-                                            <a class="flex-sm-fill text-sm-center nav-link active" id="pills-home-tab"
-                                                data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
-                                                role="tab" aria-controls="pills-home" aria-selected="true"
-                                                href="#">本日</a>
-                                            <a class="flex-sm-fill text-sm-center nav-link" id="pills-profile-tab"
-                                                data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                                                role="tab" aria-controls="pills-profile" aria-selected="false"
-                                                href="#">本週</a>
-                                            <a class="flex-sm-fill text-sm-center nav-link" id="pills-contact-tab"
-                                                data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
-                                                role="tab" aria-controls="pills-contact" aria-selected="false"
-                                                href="#">本月</a>
-                                        </nav>
-                                        <div class="mywallet-range mt-3">
-                                            查询时间：2020年07月28日00:00~2020年07月28日23:59
+                                        <div class="amount-list__item amount-list__item--disabled">
+                                            <p class="item-text">
+                                                300
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                500
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                1,000
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                3,000
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                5,000
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                8,000
+                                            </p>
+                                        </div>
+                                        <div class="amount-list__item">
+                                            <p class="item-text">
+                                                10,000
+                                            </p>
                                         </div>
                                     </div>
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                            aria-labelledby="pills-home-tab">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped">
-                                                    <thead class="">
-                                                        <tr>
-                                                            <th scope="col">時間</th>
-                                                            <th scope="col">类型</th>
-                                                            <th scope="col">金额</th>
-                                                            <th scope="col">钱包馀额</th>
-                                                            <th scope="col">单号</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">2020年3月11日 09:52:31</th>
-                                                            <td>額度轉換</td>
-                                                            <td>100.00</td>
-                                                            <td>1678.67</td>
-                                                            <td>HBSL20200429155435000001</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">2020年3月11日 09:52:31</th>
-                                                            <td>額度轉換</td>
-                                                            <td>100.00</td>
-                                                            <td>1678.67</td>
-                                                            <td>HBSL20200429155435000001</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">2020年3月11日 09:52:31</th>
-                                                            <td>額度轉換</td>
-                                                            <td>100.00</td>
-                                                            <td>1678.67</td>
-                                                            <td>HBSL20200429155435000001</td>
-                                                        </tr>
-                                                    </tbody>
-
-                                                </table>
-                                            </div>
-                                            <nav aria-label="Page navigation example">
-                                                <ul class="pagination justify-content-center">
-                                                    <li class="page-item disabled">
-                                                        <a class="page-link">
-                                                            <div class="pre-icon"></div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="page-item active"><a class="page-link" href="#">1</a>
-                                                    </li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item">
-                                                        <a class="page-link" href="#">
-                                                            <div class="next-icon"></div>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                            aria-labelledby="pills-profile-tab">
-                                            <div class="empty">
-                                                <div class="empty-content">
-                                                    <div class="empty-icon"></div>
-                                                    <h3 class="empty-title">无资料</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                            aria-labelledby="pills-contact-tab">...</div>
-                                    </div>
                                 </div>
-                            </div>
+                                <button type="submit" class="btn btn-primary">送出</button>
+                            </form>
                         </div>
                     </div>
                 </div>

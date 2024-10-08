@@ -18,6 +18,25 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">已上傳帳戶圖片</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cardboard">
+                        <img class="cardboard__img" src="./images/passbook_cover.jpg" alt="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="Header">
         <!-- TopBar -->
         <div class="header-brand">
@@ -65,7 +84,7 @@
                                         </a>
                                     </li>
                                     <li class="user-function__item">
-                                        <a class="dropdown-item item-box" href="#">
+                                        <a class="dropdown-item item-box" href="member.html">
                                             <img src="./images/information@2x.png" alt="" class="item-box__icon">
                                             <span class="item-box__title">會員信箱</span>
                                         </a>
@@ -324,7 +343,7 @@
                                     <img src="./images/iconMember@2x.png" alt="" class="item-icon">
                                     <span class="item-title">我的帳戶</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="deposit.html">
+                                <a class="list-group-item list-group-item-action" href="deposit-record.html">
                                     <img src="./images/transaction@2x.png" alt="" class="item-icon">
                                     <span class="item-title">充提紀錄</span>
                                 </a>
@@ -336,7 +355,7 @@
                                     <img src="./images/information@2x.png" alt="" class="item-icon">
                                     <span class="item-title">銀行帳戶</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="#">
+                                <a class="list-group-item list-group-item-action" href="message.html">
                                     <img src="./images/information@2x.png" alt="" class="item-icon">
                                     <span class="item-title">會員信箱</span>
                                 </a>
@@ -366,6 +385,13 @@
                                         <div class="bind-card ">
                                             <div class="bind-card__item">
                                                 <div class="bank-card">
+                                                    <div class="bank-card__empty">
+                                                        <p class="empty-text">無綁定卡片</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bind-card__item">
+                                                <div class="bank-card">
                                                     <div class="bank-card__order">
                                                         <span class="order-number">01</span>
                                                     </div>
@@ -380,7 +406,8 @@
                                                         <div class="bank-rt">
                                                             <a href="javascript:void(0)"
                                                                 class="detail-uploader btn btn-secondary rounded-pill"
-                                                                onclick="show9()">查看已上傳圖片
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#exampleModal">查看已上傳圖片
                                                             </a>
                                                         </div>
                                                     </div>
@@ -423,7 +450,8 @@
                                                         <div class="bank-rt">
                                                             <a href="javascript:void(0)"
                                                                 class="detail-uploader btn btn-secondary rounded-pill"
-                                                                onclick="show9()">查看已上傳圖片
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#exampleModal">查看已上傳圖片
                                                             </a>
                                                         </div>
                                                     </div>
@@ -476,9 +504,26 @@
                                             <label for="account" class="form-label">帳號</label>
                                             <input type="number" class="form-control" value="">
                                         </div>
-                                        <div class="d-flex">
-                                            <button type="submit" class="btn btn-primary">送出</button>
-                                            <button type="button" class="btn btn-cancel">取消</button>
+                                        <div class="mb-3">
+                                            <div class="com-cell">
+                                                <div class="com-cell__form cell__form-item">
+                                                    <!-- 預覽圖片的區域 -->
+                                                    <div class="img-preview">
+                                                        <p class="img-preview__text">點擊選擇圖片</p>
+                                                    </div>
+                                                    <input type="file" id="formFile" name="image" style="display: none;"
+                                                        accept="image/*">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-primary">送出</button>
+                                            </div>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-cancel">取消</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
