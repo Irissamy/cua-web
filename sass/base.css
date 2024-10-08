@@ -7,10 +7,10 @@ html {
   line-height: 1.75em;
   color: #fff;
   background-color: #21357b;
-  background-image: url("../images/header-2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("../images/header-3.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: repeat;
   font-family: Microsoft JhengHei;
 }
 body::-webkit-scrollbar,
