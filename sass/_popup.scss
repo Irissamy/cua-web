@@ -71,6 +71,19 @@
   background-color: #1f2c59;
   // color: #3b3538;
 }
+.offcanvas-area {
+  position: fixed;
+  top: 30%;
+  right: 0;
+}
+.offcanvas {
+  background-image: linear-gradient(
+    to bottom,
+    #25366d 0%,
+    #314ba4 50%,
+    #25366d 100%
+  );
+}
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
