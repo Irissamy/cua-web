@@ -18,6 +18,161 @@
 </head>
 
 <body>
+    <!-- 客服 -->
+    <div class="offcanvas-area">
+        <a class="service-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight" href="#">
+            <div class="service-btn__icon">
+                <img src="./images/service-icon.gif" alt="" class="icon-img">
+            </div>
+            <h5 class="service-btn__title">客服中心</h5>
+        </a>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">客服</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="wcr">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="ms-2">連接客服中，請稍候</p>
+                </div>
+                <div class="wcr-list" style="display: none;">
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服A</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="stock-message__content">
+                                        您好，欢迎进入聊天室...
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-system-message">3月13日 週五</div>
+                        <div class="wcr-list__content wcr--right">
+                            <div class="list__item__content">
+                                <div class="stock-message">
+                                    <div class="stock-message__content">
+                                        您好我有一些问题想要询问，关于奖金￥88888要如何取得呢?
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服A</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="wcr-stock">
+                                        <div class="wcr-stock__header">
+                                            <div class="header-title">
+                                                標題
+                                            </div>
+                                            <div class="header-subtitle">
+                                                副標題
+                                            </div>
+                                        </div>
+                                        <div class="wcr-stock__content">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, sint
+                                            omnis assumenda quas corrupti fugiat sunt voluptates aspernatur tempore,
+                                            vel obcaecati distinctio. Adipisci id quaerat veritatis molestiae iusto.
+                                            Odio, architecto!
+                                        </div>
+                                        <div class="wcr-stock__footer">
+                                            <div class="stock-btn">
+                                                <a href="javascript:void(0);"
+                                                    class="stock-btn__item stock-btn__item--disabled">
+                                                    <div class="item-text">按鈕disabled</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="stock-message__time">
+                                            <span class="time-text">3:37 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wcr-list__item">
+                        <div class="wcr-list__content wcr--left">
+                            <div class="list__item__avatar -round">
+                                <img class="avatar-img" src="https://i.pravatar.cc/150?img=24" alt="" />
+                            </div>
+                            <div class="list__item__content">
+                                <div class="stock-user">
+                                    <span class="stock-user__text">客服B</span>
+                                </div>
+                                <div class="stock-message">
+                                    <div class="wcr-stock">
+                                        <div class="wcr-stock__header">
+                                            <div class="header-title">
+                                                標題
+                                            </div>
+                                            <div class="header-subtitle">
+                                                副標題
+                                            </div>
+                                        </div>
+                                        <div class="wcr-stock__content">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore
+                                            qui neque veritatis, voluptas facilis culpa? Suscipit omnis, totam non
+                                            amet quia odio nam eligendi similique eaque minima dicta mollitia!
+                                        </div>
+                                        <div class="wcr-stock__footer">
+                                            <div class="stock-btn">
+                                                <a href="javascript:void(0);"
+                                                    class="stock-btn__item -primary rounded-pill btn-ripple"
+                                                    onclick="rippleBtn(event,this);">
+                                                    <div class="item-text">按鈕</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stock-message__time">
+                                        <span class="time-text">3:37 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="wcr-footer">
+                        <div class="wcr-input">
+                            <input type="text" class="wcr-input__input">
+                            <!-- <span class="wcr-input-close__text">暂不开放聊天功能</span> -->
+                        </div>
+                        <a class="wcr-btn btn btn-primary rounded-pill btn-ripple" href="javascript:void(0)">送出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 客服end -->
     <section class="login">
         <div class="container h-100">
             <div class="d-flex justify-content-center overflow-hidden h-100">

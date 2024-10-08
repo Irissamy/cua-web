@@ -151,9 +151,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background: transparent;
     border: none;
-    border-bottom: 1px solid #5a7efa;
+    border-radius: 8px;
+    // border-bottom: 1px solid #5a7efa;
     .item-icon {
       display: block;
       height: 30px;
@@ -165,6 +166,21 @@
     }
     &:last-child {
       border-bottom: none;
+    }
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    &.active {
+      border: 2px #fdeed1 solid;
+      background: linear-gradient(135deg, #fcf5b5, #ccb15f 80%);
+      .item-icon {
+        filter: drop-shadow(2px 2px 2px rgb(70, 50, 0));
+      }
+      .item-title {
+        color: #4d360f;
+        font-weight: 600;
+        font-size: 16px;
+      }
     }
   }
 }

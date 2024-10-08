@@ -15,3 +15,10 @@
   background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
   border: 2px #ac5cea solid;
 }
+.editor-content {
+  color: #ffffff;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
