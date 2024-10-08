@@ -23,11 +23,15 @@
   position: relative;
 }
 .header-icon {
+  display: block;
   width: 24px;
   height: 24px;
   padding-top: 0px;
   padding-right: 0px;
   margin-left: 8px;
+  &.dropdown-toggle::after {
+    display: none;
+  }
   &__icon {
     top: 0px;
     right: 0px;
@@ -49,15 +53,11 @@
   }
 }
 .lang-list {
-  position: absolute;
-  top: 64px;
-  right: -4px;
   background: #000000b3;
   border-radius: 12px;
   list-style: none;
   margin: 0px;
   padding: 16px;
-  z-index: 1;
   &::before {
     content: '';
     position: absolute;

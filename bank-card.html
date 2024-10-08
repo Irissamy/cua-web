@@ -125,20 +125,22 @@
                             <a class="btn login-btn__login" href="login.html">登入</a>
                             <a class="btn login-btn__signin" href="login.html">註冊</a>
                         </form>
-                        <a href="javascript:void(0);" class="header-icon" onclick="showLang()">
+                        <a href="javascript:void(0);" class="header-icon dropdown-toggle" id="dropdownMenuOffset"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
                             <div class="header-icon__icon-img"></div>
                         </a>
-                        <ul id="show" class="lang-list" style="display: none;">
-                            <li class="lang-list__item lang-list__item--active">
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end lang-list"
+                            aria-labelledby="dropdownMenuOffset">
+                            <li class="dropdown-item lang-list__item lang-list__item--active">
                                 <span class="item-title">繁體中文</span>
                             </li>
-                            <li class="lang-list__item">
+                            <li class="dropdown-item lang-list__item">
                                 <span class="item-title">English</span>
                             </li>
-                            <li class="lang-list__item">
+                            <li class="dropdown-item lang-list__item">
                                 <span class="item-title">简体中文</span>
                             </li>
-                            <li class="lang-list__item">
+                            <li class="dropdown-item lang-list__item">
                                 <span class="item-title">Tiếng việt</span>
                             </li>
                         </ul>
@@ -624,14 +626,6 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
-        function showLang() {
-            var popup = document.getElementById('show');
-            if (popup.style.display === 'none') {
-                popup.style.display = 'block';
-            } else {
-                popup.style.display = 'none';
-            }
-        }
         function setMask() {
             let navMask = document.getElementById('nav-mask');
             let navItem = document.querySelectorAll('.nav-item');
