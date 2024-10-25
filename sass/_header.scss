@@ -119,6 +119,9 @@
     align-items: center;
     .user-m__icon {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 56px;
       height: 56px;
       background-color: hsla(0, 0%, 100%, 0.4);
@@ -134,6 +137,25 @@
         background-size: cover;
         background-position: center;
         overflow: hidden;
+      }
+      &__vip {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 20px;
+        &.-normal {
+          background: linear-gradient(135deg, #bac2ff 30%, #002e99 100%);
+        }
+        &.-gold {
+          background: linear-gradient(135deg, #fff1b8 30%, #ab862b 100%);
+        }
+        &.-silver {
+          background: linear-gradient(135deg, #ffffff 50%, #8d90a2 100%);
+        }
       }
     }
     .user-m__name {
