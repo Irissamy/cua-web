@@ -173,24 +173,27 @@
         </div>
     </div>
     <!-- 客服end -->
-    <!-- 註冊成功 -->
-    <div class="modal fade regsuccess" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- 修改密碼彈窗 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-                <div class="xfe-content success d-flex justify-content-center align-items-center">
-                    <div class="xfe">
-                        <div class="xfe__icon"></div>
-                        <p class="xfe__title">已成功提交</p>
-                        <p class="xfe__text">请在弹出的网页上完成支付</p>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">修改密碼</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cardboard">
+                        <p class="dialog-alert__text-info">請維持文件完整性，不能切角或切邊/反光/模糊不清/遮住個人資料</p>
+                        <img class="cardboard__img" src="./images/passbook_cover.jpg" alt="">
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確認</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">關閉</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- 修改密碼彈窗end -->
     <div class="layout-body">
         <div id="Header">
             <!-- TopBar -->
@@ -533,66 +536,88 @@
                         </div>
                         <div class="col-sm-12 col-md-9">
                             <div class="layout-content p-5">
-                                <h2 class="main-title">充值</h2>
+                                <h2 class="main-title">實名認證</h2>
                                 <hr>
                                 <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
+                                    <div class="sub-title">1.基本資料</div>
                                     <div class="mb-3">
-                                        <label for="channel" class="form-label">通道</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>公司入款</option>
-                                            <option value="1">微信</option>
-                                            <option value="2">公司入款</option>
-                                            <option value="3">微信</option>
-                                        </select>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <label for="bankAccount" class="form-label">持卡人姓名</label>
+                                        </div>
+                                        <input type="text" class="form-control" value="" placeholder="請輸入真實姓名">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="depositMount" class="form-label">金額</label>
-                                        <input type="number" class="form-control" value="">
-                                        <div class="amount-list mt-2">
-                                            <div class="amount-list__item amount-list__item--active">
-                                                <p class="item-text">
-                                                    100
-                                                </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <label for="bankAccount" class="form-label">生日</label>
+                                        </div>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <label for="bankAccount" class="form-label">身分證號</label>
+                                        </div>
+                                        <input type="text" class="form-control" value="" placeholder="請輸入身分證號">
+                                    </div>
+                                    <div class="sub-title">2.上傳認證
+                                        <a class="btn btn-secondary btn-form rounded-pill ms-auto"
+                                            href="javascript:void(0);" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">查看範例</a>
+                                    </div>
+                                    <div class="com-cell-info">
+                                        <span class="text-red">
+                                            身分證'正面'+存摺+白紙
+                                        </span>
+                                        寫上僅供金富發使用+當日日期
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form cell__form-item">
+                                            <!-- form-uploader--active為已上傳後的樣式，拿掉則為未上傳的default -->
+                                            <div class="form-uploader form-uploader--active">
+                                                <div class="form-uploader__img">
+                                                    <div class="img-default"></div>
+                                                    <input type="file" class="form-uploader__input">
+                                                </div>
+                                                <div class="form-uploader__text">限JPG. PNG档</div>
+                                                <img class="form-uploader__img-full" src="./images/demo-bank-card.jpeg"
+                                                    alt="">
                                             </div>
-                                            <div class="amount-list__item amount-list__item--disabled">
-                                                <p class="item-text">
-                                                    300
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    500
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    1,000
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    3,000
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    5,000
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    8,000
-                                                </p>
-                                            </div>
-                                            <div class="amount-list__item">
-                                                <p class="item-text">
-                                                    10,000
-                                                </p>
-                                            </div>
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-secondary rounded-pill btn-ripple btn-event">
+                                                <span class="restore__text">清除</span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                        data-bs-target="#exampleModal">送出</button>
+                                    <div class="com-cell-info ">
+                                        <span class="text-red">
+                                            身分證'背面'+存摺+白紙
+                                        </span>
+                                        寫上僅供金富發使用+當日日期
+                                    </div>
+                                    <div class="com-cell">
+                                        <div class="com-cell__form cell__form-item">
+                                            <!-- form-uploader--active為已上傳後的樣式，拿掉則為未上傳的default -->
+                                            <div class="form-uploader">
+                                                <div class="form-uploader__img">
+                                                    <div class="img-default"></div>
+                                                    <input type="file" class="form-uploader__input">
+                                                </div>
+                                                <div class="form-uploader__text">限JPG. PNG档</div>
+                                                <img class="form-uploader__img-full" src="./images/demo-bank-card.jpeg"
+                                                    alt="">
+                                            </div>
+                                            <a href=" javascript:void(0);"
+                                                class="btn btn-secondary rounded-pill btn-ripple btn-event btn--disabled">
+                                                <span class="restore__text">清除</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="com-cell-title">
+                                        <h4 class="com-cell-title__text">注意事項</h4>
+                                    </div>
+                                    <div class="com-cell-info ">※上傳前請務必看過範例。</div>
+                                    <div class="com-cell-info ">※無摺會員請使用「網銀截圖」，截圖中須包含「姓名」、「銀行」、「帳號」、「分行」。</div>
+                                    <div class="com-cell-info ">※無摺會員在身分證(正面)需上傳身分證正面已及提款卡合照。</div>
+                                    <button type="submit" class="btn btn-primary mt-3">送出</button>
                                 </form>
                             </div>
                         </div>

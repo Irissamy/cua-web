@@ -449,6 +449,7 @@ body::-webkit-scrollbar,
 html::-webkit-scrollbar {
   display: none;
 }
+
 section {
   background-color: transparent;
   padding: 2rem 0;
@@ -1266,7 +1267,7 @@ tr {
 .com-cell__form .form-uploader__text {
   font-size: 14px;
   padding-left: 16px;
-  color: #515561;
+  color: #909abb;
 }
 .com-cell__form .form-uploader__input {
   position: absolute;
@@ -3494,6 +3495,8 @@ section {
 
 .sub-title {
   position: relative;
+  display: flex;
+  align-items: center;
   padding-left: 16px;
   font-size: 16px;
 }
