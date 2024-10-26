@@ -2227,6 +2227,59 @@ swiper-slide {
   margin-right: 0px;
 }
 
+.toast-popup {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  bottom: 60px;
+  left: 0;
+  z-index: 2001;
+  pointer-events: none;
+  animation: fade 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toast-popup__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  padding: 8px;
+  width: 140px;
+  min-height: 140px;
+}
+.toast-popup__text {
+  color: #ffffff;
+  font-size: 14px;
+}
+.toast-popup__icon {
+  margin-bottom: 16px;
+}
+.toast-popup__icon__img {
+  width: 60px;
+  height: 60px;
+  display: block;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.toast-popup__icon__img.-success {
+  -webkit-mask-image: url('../images/icon_exclamation@2x.png');
+  mask-image: url('../images/icon_exclamation@2x.png');
+  background-color: #ffffff;
+}
+.toast-popup__icon__img.-warning {
+  -webkit-mask-image: url('../images/icon_exclamation_1@2x.png');
+  mask-image: url('../images/icon_exclamation_1@2x.png');
+  background-color: #ffffff;
+}
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
@@ -4696,4 +4749,142 @@ section {
 
 .message-close + .wcr-footer {
   display: none;
+}
+
+.share .share-list__item {
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: block;
+}
+.share .share-list__item:last-child {
+  margin-bottom: 0;
+}
+.share .share-list__content {
+  position: relative;
+  padding: 16px;
+  padding-bottom: 8px;
+}
+.share .arrow-btn {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+}
+.share .arrow-btn__text {
+  font-size: 12px;
+  color: #4d8aff;
+}
+.share .arrow-btn__icon {
+  display: block;
+  width: 24px;
+}
+.share .share-wallet {
+  color: #786464;
+  display: flex;
+  align-items: center;
+}
+.share .share-wallet__img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.share .share-wallet__text {
+  padding: 0 8px;
+}
+.share .share-wallet__name {
+  margin: 0;
+  padding-bottom: 4px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.share .share-wallet__money {
+  font-size: 16px;
+  font-weight: 600;
+}
+.share .share-head {
+  color: #4d8aff;
+  font-size: 12px;
+  margin: 0 0 8px;
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #4d8aff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.share .share-info {
+  color: #909abb;
+}
+.share .share-info__title {
+  margin: 0;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.share .share-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+.share .share-info .list__text {
+  display: flex;
+  overflow: hidden;
+  font-size: 14px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  line-height: 1.2;
+}
+.share .share-info .list__text__title {
+  flex-shrink: 0;
+}
+.share .share-info .list__text__result {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.share .share-info .list__collapse {
+  padding: 0px;
+  transition: height 0.3s ease;
+}
+.share .btn-group {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+.share .btn-group .btn {
+  width: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  padding: 8px;
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 8px;
+}
+.share .btn-group .btn:last-child {
+  margin-right: 0px;
+}
+.share .collapse {
+  height: 100%;
+  transition: height 0.3s ease;
+}
+.share .collapse:not(.show) {
+  display: none;
+  height: 0;
+}
+.share .accordion-button {
+  width: auto;
+  padding: 0px;
+}
+.share .accordion-button .arrow-btn__icon {
+  transition: transform 0.2s ease-in-out;
+}
+.share .accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.share .accordion-button:not(.collapsed) .arrow-btn__icon {
+  transform: rotate(-180deg);
 } /*# sourceMappingURL=main.css.map */

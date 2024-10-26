@@ -173,18 +173,48 @@
         </div>
     </div>
     <!-- 客服end -->
-    <!-- 已上傳帳戶圖片 -->
+    <!-- 複製成功 start -->
+    <div id="toast" class="toast-popup" style="display: none;">
+        <div class="toast-popup__body">
+            <div class="toast-popup__icon">
+                <div class="toast-popup__icon__img -success"></div>
+            </div>
+            <div class="toast-popup__text">複製成功</div>
+        </div>
+    </div>
+    <!-- 複製成功 end -->
+    <!-- 二維碼 start -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">已上傳帳戶圖片</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">二維碼產生</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="w-75 m-auto">
+                        <div class="mb-2">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">連結名稱</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="aa">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">層級</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="代理">
+                                </div>
+                            </div>
+                        </div>
                         <div class="cardboard">
-                            <img class="cardboard__img" src="./images/passbook_cover.jpg" alt="">
+                            <img class="cardboard__img" src="./images/appdownload_qr.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -194,6 +224,7 @@
             </div>
         </div>
     </div>
+    <!-- 二維碼end -->
     <div id="Header">
         <!-- TopBar -->
         <div class="header-brand">
@@ -516,7 +547,7 @@
                                     <img src="./images/betting_record@2x.png" alt="" class="item-icon">
                                     <span class="item-title">投注紀錄</span>
                                 </a>
-                                <a class="list-group-item list-group-item-action active" href="bank-card.html">
+                                <a class="list-group-item list-group-item-action" href="bank-card.html">
                                     <img src="./images/information@2x.png" alt="" class="item-icon">
                                     <span class="item-title">銀行帳戶</span>
                                 </a>
@@ -533,117 +564,160 @@
                     </div>
                     <div class="col-sm-12 col-md-9">
                         <div class="layout-content p-5">
-                            <h2 class="main-title">銀行帳戶</h2>
+                            <h2 class="main-title">推廣</h2>
                             <hr>
                             <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#home" type="button" role="tab" aria-controls="home"
-                                        aria-selected="true">銀行帳戶</button>
+                                        aria-selected="true">推廣</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                                         data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
-                                        aria-selected="false">新增銀行帳戶</button>
+                                        aria-selected="false">新增推廣連結</button>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
-                                        <div class="bind-card ">
-                                            <div class="bind-card__item">
-                                                <div class="bank-card">
-                                                    <div class="bank-card__empty">
-                                                        <p class="empty-text">無綁定卡片</p>
+                                        <div class="share">
+                                            <div class="share-list accordion" id="accordionExample">
+                                                <div class="share-list__item">
+                                                    <div class="share-list__content">
+                                                        <h4 class="share-head" id="headingOne">
+                                                            时間：2020年3月11日 09:52:31
+                                                        </h4>
+                                                        <div class="arrow-btn accordion-button collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                            aria-expanded="true" aria-controls="collapseOne">
+                                                            <span class="arrow-btn__text">詳細</span>
+                                                        </div>
+                                                        <div class="share-info">
+                                                            <ul class="share-info__list">
+                                                                <li class="list__text col-50">
+                                                                    <span class="list__text__title">連結名稱：</span><span
+                                                                        class="list__text__result">aaa</span>
+                                                                </li>
+                                                                <li class="list__text col-50">
+                                                                    <span class="list__text__title">層級：</span><span
+                                                                        class="list__text__result">代理</span>
+                                                                </li>
+                                                                <li class="list__text">
+                                                                    <span class="list__text__title">連結：</span><span
+                                                                        class="list__text__result">https://www.cua99407jw.com/?TWIyMTNfYWVhNjNlNzcxOTgxNzlh&nT=1729685883&c=H9VKaiSvXIDikQu8zIbN8fRcl2%2BK7MfG8qzSH1zUdNBI6FoUXaZnvCZTesmtNTZmEd%2B0pSrlcpAySVQ7EU2pAw%3D%3D&run_page=1</span>
+                                                                </li>
+                                                                <div class="accordion-collapse collapse"
+                                                                    id="collapseOne" aria-labelledby="headingOne"
+                                                                    data-bs-parent="#accordionExample">
+                                                                    <ul class="list__collapse accordion-body">
+                                                                        <li class="list__text">
+                                                                            <span
+                                                                                class="list__text__title">統一占成-統一占成：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">棋牌遊戲館-棋牌遊戲館
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">體育館-體育館
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">電子遊戲-電子遊戲
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">真人百家-真人百家
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <li class="btn-group">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary">複製連結</a>
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">二維碼產生</a>
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary">刪除</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="bind-card__item">
-                                                <div class="bank-card">
-                                                    <div class="bank-card__order">
-                                                        <span class="order-number">01</span>
-                                                    </div>
-                                                    <div class="bank-card__bank">
-                                                        <div class="bank-lf">
-                                                            <div class="bank-icon">
-                                                                <img class="bank-icon__img"
-                                                                    src="./images/bankLogo@2x.png">
-                                                            </div>
-                                                            <p class="bank-name">中国银行</p>
+                                                <div class="share-list__item">
+                                                    <div class="share-list__content">
+                                                        <h4 class="share-head" id="headingTwo">
+                                                            时間：2020年3月11日 09:52:31
+                                                        </h4>
+                                                        <div class="arrow-btn accordion-button collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                            aria-expanded="true" aria-controls="collapseTwo">
+                                                            <span class="arrow-btn__text">詳細</span>
                                                         </div>
-                                                        <div class="bank-rt">
-                                                            <a href="javascript:void(0)"
-                                                                class="detail-uploader btn btn-secondary rounded-pill"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#exampleModal">查看已上傳圖片
-                                                            </a>
+                                                        <div class="share-info">
+                                                            <ul class="share-info__list">
+                                                                <li class="list__text col-50">
+                                                                    <span class="list__text__title">連結名稱：</span><span
+                                                                        class="list__text__result">aaa</span>
+                                                                </li>
+                                                                <li class="list__text col-50">
+                                                                    <span class="list__text__title">層級：</span><span
+                                                                        class="list__text__result">代理</span>
+                                                                </li>
+                                                                <li class="list__text">
+                                                                    <span class="list__text__title">連結：</span><span
+                                                                        class="list__text__result">https://www.cua99407jw.com/?TWIyMTNfYWVhNjNlNzcxOTgxNzlh&nT=1729685883&c=H9VKaiSvXIDikQu8zIbN8fRcl2%2BK7MfG8qzSH1zUdNBI6FoUXaZnvCZTesmtNTZmEd%2B0pSrlcpAySVQ7EU2pAw%3D%3D&run_page=1</span>
+                                                                </li>
+                                                                <div class="accordion-collapse collapse"
+                                                                    id="collapseTwo" aria-labelledby="headingTwo"
+                                                                    data-bs-parent="#accordionExample">
+                                                                    <ul class="list__collapse accordion-body">
+                                                                        <li class="list__text">
+                                                                            <span
+                                                                                class="list__text__title">統一占成-統一占成：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">棋牌遊戲館-棋牌遊戲館
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">體育館-體育館
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">電子遊戲-電子遊戲
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                        <li class="list__text">
+                                                                            <span class="list__text__title">真人百家-真人百家
+                                                                                返點：</span>
+                                                                            <span class="list__text__result">0%</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <li class="btn-group">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary">複製連結</a>
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">二維碼產生</a>
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary">刪除</a>
+                                                                </li>
+                                                            </ul>
                                                         </div>
-                                                    </div>
-                                                    <div class="bank-card__detail">
-                                                        <div class="detail-lf">
-                                                            <div class="detail-item">
-                                                                <span class="detail-item__title">开户网点：</span>
-                                                                <span class="detail-item__text">广州/深圳</span>
-                                                            </div>
-                                                            <div class="detail-item">
-                                                                <span class="detail-item__title">开户人：</span>
-                                                                <span class="detail-item__text">张三</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bank-card__account">
-                                                        <span class="account-number">7896 - **** - 1234</span>
-                                                        <label class="card-switch">
-                                                            <input class="card-switch__input" type="checkbox" checked>
-                                                            <span class="card-switch__slider">
-                                                                <span class="slider-text">启用</span>
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="bind-card__item">
-                                                <div class="bank-card">
-                                                    <div class="bank-card__order">
-                                                        <span class="order-number">02</span>
-                                                    </div>
-                                                    <div class="bank-card__bank">
-                                                        <div class="bank-lf">
-                                                            <div class="bank-icon">
-                                                                <img class="bank-icon__img"
-                                                                    src="./images/bankLogo@2x.png">
-                                                            </div>
-                                                            <p class="bank-name">中国银行</p>
-                                                        </div>
-                                                        <div class="bank-rt">
-                                                            <a href="javascript:void(0)"
-                                                                class="detail-uploader btn btn-secondary rounded-pill"
-                                                                data-bs-toggle="modal"
-                                                                data-bs-target="#exampleModal">查看已上傳圖片
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bank-card__detail">
-                                                        <div class="detail-lf">
-                                                            <div class="detail-item">
-                                                                <span class="detail-item__title">开户网点：</span>
-                                                                <span class="detail-item__text">广州/深圳</span>
-                                                            </div>
-                                                            <div class="detail-item">
-                                                                <span class="detail-item__title">开户人：</span>
-                                                                <span class="detail-item__text">张三</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="bank-card__account">
-                                                        <span class="account-number">7896 - **** - 1234</span>
-                                                        <label class="card-switch">
-                                                            <input class="card-switch__input" type="checkbox" checked>
-                                                            <span class="card-switch__slider">
-                                                                <span class="slider-text">启用</span>
-                                                            </span>
-                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -653,45 +727,50 @@
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                     <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
                                         <div class="mb-3">
-                                            <label for="bankCode" class="form-label">銀行名稱</label>
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected>004 - 臺灣銀行</option>
-                                                <option value="1">005 - 臺灣土地銀行</option>
-                                                <option value="2">004 - 臺灣銀行</option>
-                                                <option value="3">005 - 臺灣土地銀行</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="bankName" class="form-label">分行名稱</label>
+                                            <label for="bankName" class="form-label">名稱設定</label>
                                             <input type="text" class="form-control" value="">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="name" class="form-label">戶名</label>
-                                            <input type="text" readonly class="form-control" value="王大明">
+                                            <label for="bankCode" class="form-label">分層設定</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>會員</option>
+                                                <option value="1">代理</option>
+                                            </select>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="account" class="form-label">帳號</label>
-                                            <input type="number" class="form-control" value="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <div class="com-cell">
-                                                <div class="com-cell__form cell__form-item">
-                                                    <!-- 預覽圖片的區域 -->
-                                                    <div class="img-preview">
-                                                        <p class="img-preview__text">點擊選擇圖片</p>
-                                                    </div>
-                                                    <input type="file" id="formFile" name="image" style="display: none;"
-                                                        accept="image/*">
 
-                                                </div>
-                                            </div>
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">統一占成-統一占成</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0%</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">棋牌遊戲館-棋牌遊戲館 返點</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0%</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">體育館-體育館 返點</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0%</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">電子遊戲-電子遊戲 返點</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0%</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="bankCode" class="form-label">真人百家-真人百家 返點</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>0%</option>
+                                            </select>
                                         </div>
                                         <div class="row g-2">
                                             <div class="col">
-                                                <button type="submit" class="btn btn-primary">送出</button>
-                                            </div>
-                                            <div class="col">
-                                                <button type="button" class="btn btn-cancel">取消</button>
+                                                <button type="submit" class="btn btn-primary">產生推廣連結</button>
                                             </div>
                                         </div>
                                     </form>
@@ -816,6 +895,7 @@
             }
         }
         setMask()
+
     </script>
 </body>
 
