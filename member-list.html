@@ -173,23 +173,48 @@
         </div>
     </div>
     <!-- 客服end -->
-    <!-- 修改密碼彈窗 -->
+    <!-- 轉帳 start -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">修改密碼</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">轉帳</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
                         <div class="mb-3">
-                            <label for="password" class="form-label">舊登入密碼</label>
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">帳號</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="aaa999">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">餘額</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="100.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="money" class="form-label">轉帳金額</label>
+                            <input type="number" class="form-control" value="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼確認</label>
                             <input type="password" class="form-control" value="">
                         </div>
                         <div class="mb-3">
-                            <label for="newPassword" class="form-label">設定新登入密碼</label>
-                            <input type="password" class="form-control" value="">
+                            <label for="password" class="form-label">備註</label>
+                            <textarea class="form-control" placeholder="備註" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
                         </div>
                     </form>
                 </div>
@@ -198,13 +223,92 @@
                         <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">取消</button>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-primary">送出</button>
+                        <button type="button" class="btn btn-primary">確定</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 修改密碼彈窗end -->
+    <!-- 轉帳end -->
+    <!-- 詳細 start -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">會員詳細</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="col-lg-6 col-md-8 col-sm-12 m-auto mt-3">
+                        <div class="mb-3">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">帳號</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="aaa999">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">餘額</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="100.00">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="row g-3 align-items-start">
+                                <div class="col-2">
+                                    <label for="" class="col-form-label">層級</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" readonly class="form-control-plaintext" value="代理">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">統一占成-統一占成</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>0%</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">棋牌遊戲館-棋牌遊戲館 返點</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>0%</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">體育館-體育館 返點</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>0%</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">電子遊戲-電子遊戲 返點</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>0%</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">真人百家-真人百家 返點</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>0%</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 詳細end -->
     <div class="layout-body">
         <div id="Header">
             <!-- TopBar -->
@@ -461,9 +565,6 @@
                                 <li class="nav-item modal-dialog-centered">
                                     <a class="nav-link hvr-underline-from-left" href="javascript:void(0)">捕魚游戏</a>
                                 </li>
-                                <li class="nav-item modal-dialog-centered">
-                                    <a class="nav-link hvr-underline-from-left" href="promo.html">優惠</a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -516,7 +617,7 @@
                                     </a>
                                 </div>
                                 <div class="list-group user-list">
-                                    <a class="list-group-item list-group-item-action active" href="member.html">
+                                    <a class="list-group-item list-group-item-action" href="member.html">
                                         <img src="./images/iconMember@2x.png" alt="" class="item-icon">
                                         <span class="item-title">我的帳戶</span>
                                     </a>
@@ -536,7 +637,7 @@
                                         <img src="./images/information@2x.png" alt="" class="item-icon">
                                         <span class="item-title">會員信箱</span>
                                     </a>
-                                    <a class="list-group-item list-group-item-action" href="member-list.html">
+                                    <a class="list-group-item list-group-item-action active" href="member-list.html">
                                         <img src="./images/ic_member-list@2x.png" alt="" class="item-icon">
                                         <span class="item-title">會員列表</span>
                                     </a>
@@ -545,111 +646,133 @@
                         </div>
                         <div class="col-sm-12 col-md-9">
                             <div class="layout-content p-5">
-                                <h2 class="main-title">個人資料</h2>
+                                <h2 class="main-title">充提紀錄</h2>
                                 <hr>
-                                <div class="sub-title">基本資料</div>
-                                <form class="pt-3">
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">帳號</label>
-                                            </div>
-                                            <div class="col-10">
-                                                <input type="text" readonly class="form-control-plaintext"
-                                                    value="22364789091">
-                                                <span class="form-text text-danger">
-                                                    Must be 8-20 characters long.
-                                                </span>
+                                <div class="interval-filter mt-3">
+                                    <div class="com-cell mb-2">
+                                        <div class="com-cell__form">
+                                            <div class="form-group">
+                                                <div class="el-icon -icon_search"></div>
+                                                <input type="text" class="el-input" placeholder="搜尋會員帳號">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">真實姓名</label>
-                                            </div>
-                                            <div class="col-10 d-flex">
-                                                <span class="form-text text-danger me-2">
-                                                    未驗證
-                                                </span>
-                                                <a class="btn btn-secondary btn-form rounded-pill"
-                                                    href="verified.html">身份驗證</a>
+                                    <nav class="nav nav-pills flex-column flex-sm-row">
+                                        <a class="flex-sm-fill text-sm-center nav-link active" id="pills-home-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true" href="#">全部</a>
+                                        <a class="flex-sm-fill text-sm-center nav-link" id="pills-profile-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                                            role="tab" aria-controls="pills-profile" aria-selected="false"
+                                            href="#">代理</a>
+                                        <a class="flex-sm-fill text-sm-center nav-link" id="pills-contact-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+                                            role="tab" aria-controls="pills-contact" aria-selected="false"
+                                            href="#">會員</a>
+                                    </nav>
+                                </div>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                        aria-labelledby="pills-home-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead class="">
+                                                    <tr>
+                                                        <th scope="col">會員帳號</th>
+                                                        <th scope="col">餘額</th>
+                                                        <th scope="col" class="w-25">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">aaa</th>
+                                                        <td>100.00</td>
+                                                        <td>
+                                                            <div class="row g-2">
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">轉帳</a>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal2">詳細</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">aaa</th>
+                                                        <td>100.00</td>
+                                                        <td>
+                                                            <div class="row g-2">
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">轉帳</a>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal2">詳細</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">aaa</th>
+                                                        <td>100.00</td>
+                                                        <td>
+                                                            <div class="row g-2">
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal">轉帳</a>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <a href="javascript:void(0)"
+                                                                        class="btn btn-secondary" data-bs-toggle="modal"
+                                                                        data-bs-target="#exampleModal2">詳細</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link">
+                                                        <div class="pre-icon"></div>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">
+                                                        <div class="next-icon"></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                        aria-labelledby="pills-profile-tab">
+                                        <div class="empty">
+                                            <div class="empty-content">
+                                                <div class="empty-icon"></div>
+                                                <h3 class="empty-title">无资料</h3>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">生日</label>
-                                            </div>
-                                            <div class="col-10 d-flex">
-                                                <span class="form-text text-danger me-2">
-                                                    未驗證
-                                                </span>
-                                                <a class="btn btn-secondary btn-form rounded-pill"
-                                                    href="verified.html">身份驗證</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">身分證號</label>
-                                            </div>
-                                            <div class="col-10 d-flex">
-                                                <span class="form-text text-danger me-2">
-                                                    未驗證
-                                                </span>
-                                                <a class="btn btn-secondary btn-form rounded-pill"
-                                                    href="verified.html">身份驗證</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">錢包餘額</label>
-                                            </div>
-                                            <div class="col-10">
-                                                <input type="text" readonly class="form-control-plaintext"
-                                                    value="1,000">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">手機號碼</label>
-                                            </div>
-                                            <div class="col-10">
-                                                <input type="text" readonly class="form-control-plaintext"
-                                                    value="09123123123">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">登入密碼</label>
-                                            </div>
-                                            <div class="col-10">
-                                                <button type="button" class="btn btn-secondary btn-form rounded-pill"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">修改密碼</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="row g-3 align-items-start">
-                                            <div class="col-2">
-                                                <label for="" class="col-form-label">提領密碼</label>
-                                            </div>
-                                            <div class="col-10">
-                                                <button type="button" class="btn btn-secondary btn-form rounded-pill"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">修改密碼</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                        aria-labelledby="pills-contact-tab">...</div>
+                                </div>
                             </div>
                         </div>
                     </div>
