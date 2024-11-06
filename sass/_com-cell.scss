@@ -68,7 +68,7 @@
 .withdraw-cell__item + .com-cell-title {
   padding-top: 8px;
 }
-.com-cell + .com-cell-title {
+.cell-list + .com-cell-title {
   padding-top: 8px;
 }
 .com-cell-title__text {
@@ -78,13 +78,31 @@
   }
 }
 .com-cell-info {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
   color: #909abb;
   line-height: 18px;
   padding-top: 12px;
+  &.text-red {
+    color: #ff3d3d;
+  }
   .text-red {
     color: #ff3d3d;
+  }
+  &__icon {
+    position: relative;
+    flex: 0 0 auto;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask: url(../images/icon_mistake@2x.png) no-repeat center center;
+    mask-size: contain;
+    background-color: #ff3d3d !important;
   }
 }
 
@@ -703,6 +721,16 @@
       font-size: 16px;
       color: #515561;
       padding-bottom: 8px;
+      .title-icon {
+        width: 56px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 8px;
+        &__img {
+          display: block;
+          width: 100%;
+        }
+      }
     }
     &__text {
       text-align: center;
@@ -714,6 +742,9 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      &.-danger {
+        color: #ff3d3d;
+      }
     }
     &__price {
       text-align: center;
@@ -736,9 +767,24 @@
           animation-fill-mode: forwards;
         }
       }
+      &.-barcode {
+        width: 100%;
+        height: auto;
+      }
     }
     &__btn__text {
       margin: 0;
+    }
+    &__subtitle {
+      text-align: center;
+      margin-top: $space-sm;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #515561;
+      font-weight: 600;
+      &.-danger {
+        color: #ff3d3d;
+      }
     }
   }
 }
