@@ -38,6 +38,7 @@
 .table {
   color: #e4e4e4;
 }
+
 .table-striped > tbody > tr:nth-of-type(odd) > * {
   background-color: rgb(34 52 113);
   color: #909bbb;
@@ -49,6 +50,7 @@ th,
 thead,
 tr {
   border-color: #656874;
+  white-space: nowrap;
 }
 .page-item {
   .page-link {

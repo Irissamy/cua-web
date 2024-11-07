@@ -1,11 +1,7 @@
 .btn {
   padding: 8px 20px;
 }
-div {
-  &::-webkit-scrollbar {
-    display: none; /* 不顯示滾動條 */
-  }
-}
+
 //間距
 $space-xxs: 2px;
 $space-xs: 4px;

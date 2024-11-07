@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -445,10 +444,6 @@ html {
   background-repeat: repeat;
   font-family: Microsoft JhengHei;
 }
-body::-webkit-scrollbar,
-html::-webkit-scrollbar {
-  display: none;
-}
 
 section {
   background-color: transparent;
@@ -686,10 +681,6 @@ All css below is facultative, except for:
   padding: 8px 20px;
 }
 
-div::-webkit-scrollbar {
-  display: none; /* 不顯示滾動條 */
-}
-
 a {
   text-decoration: none;
 }
@@ -780,6 +771,7 @@ th,
 thead,
 tr {
   border-color: #656874;
+  white-space: nowrap;
 }
 
 .page-item .page-link {
@@ -2091,7 +2083,11 @@ swiper-slide {
   width: 85%;
   margin: 0 auto;
   max-width: 660px !important;
-  height: 480px;
+}
+
+.modal-sm .modal-content {
+  width: 30%;
+  min-height: 300px;
 }
 
 .modal-backdrop {
@@ -2256,7 +2252,7 @@ swiper-slide {
   position: fixed;
   top: 30%;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .offcanvas {
@@ -2462,6 +2458,14 @@ swiper-slide {
   padding-top: 110px;
 }
 
+.side-content {
+  padding: 16px;
+}
+
+.layout-content {
+  padding: 3rem;
+}
+
 .side-content,
 .layout-content {
   border-radius: 12px;
@@ -2479,6 +2483,14 @@ swiper-slide {
   max-width: 100%;
 }
 
+@media (max-width: 980px) {
+  .side-content {
+    padding: 8px;
+  }
+  .layout-content {
+    padding: 2rem;
+  }
+}
 #Header {
   background-color: #21357b;
 }
@@ -2910,6 +2922,32 @@ swiper-slide {
     right: 6px;
   }
 }
+@media (max-width: 768px) {
+  #Header .wrap .navbar-brand img {
+    height: 36px;
+  }
+  #Header .wrap .btn {
+    height: 36px;
+    font-size: 12px;
+  }
+  .inner-user__user-m .user-m__icon {
+    width: 44px;
+    height: 44px;
+  }
+  .inner-user__user-m .user-m__icon__vip {
+    width: 36px;
+    height: 36px;
+  }
+  .inner-user__info .info-list__item {
+    line-height: 1.5;
+  }
+  .core-function__item .item-icon {
+    height: 28px;
+  }
+  .core-function__item .item-title {
+    padding-top: 2px;
+  }
+}
 .about-list {
   display: flex;
   justify-content: center;
@@ -2920,6 +2958,8 @@ swiper-slide {
 }
 .about-list__item .item-title {
   color: #d5d5d5;
+  font-size: 14px;
+  padding: 12px;
 }
 .about-list__item::before {
   content: '';
@@ -2944,6 +2984,18 @@ swiper-slide {
 @media (max-width: 980px) {
   .footer {
     padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 12px 0px;
+  }
+  .about-list__item .item-title {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }
 .login-btn__login {
@@ -3246,6 +3298,24 @@ section {
     height: 52px;
   }
 }
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px;
+  }
+  .sidebar-list .list-item {
+    width: 25%;
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .main-content {
+    padding-top: 60px;
+  }
+  .sidebar-list .list-item {
+    width: 33%;
+    height: 48px;
+  }
+}
 .login {
   width: 100%;
   height: 100vh;
@@ -3464,6 +3534,7 @@ section {
 .entry-form__main .main-reg {
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
   overflow-y: auto;
   height: 100%;
   transition: all 0.1s ease-in-out;
@@ -4194,6 +4265,29 @@ section {
   margin-bottom: 0px;
 }
 
+@media (max-width: 980px) {
+  .member-main .user-m__icon {
+    height: auto;
+  }
+  .member-main .user-m__info {
+    min-height: auto;
+  }
+  .member-main .user-m .info-list__item {
+    padding-top: 4px;
+    line-height: 1.5;
+  }
+  .member-main .core-function__item .item-icon {
+    height: 32px;
+  }
+  .member-main .core-function__item .item-title {
+    font-size: 12px;
+    padding-top: 4px;
+  }
+  .member-main .user-list .list-group-item.active .item-title {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
 .message-cell__item {
   display: block;
   margin-top: 8px;

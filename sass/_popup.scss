@@ -7,7 +7,12 @@
   width: 85%;
   margin: 0 auto;
   max-width: 660px !important;
-  height: 480px;
+}
+.modal-sm {
+  .modal-content {
+    width: 30%;
+    min-height: 300px;
+  }
 }
 .modal-backdrop {
   z-index: auto;
@@ -160,7 +165,7 @@
   position: fixed;
   top: 30%;
   right: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .offcanvas {
   background-image: linear-gradient(

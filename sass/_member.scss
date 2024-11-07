@@ -578,3 +578,42 @@
     }
   }
 }
+@media (max-width: 980px) {
+  .member-main {
+    .user-m {
+      &__icon {
+        height: auto;
+      }
+      &__info {
+        min-height: auto;
+      }
+      .info-list {
+        &__item {
+          padding-top: 4px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .core-function {
+      &__item {
+        .item-icon {
+          height: 32px;
+        }
+        .item-title {
+          font-size: 12px;
+          padding-top: 4px;
+        }
+      }
+    }
+    .user-list {
+      .list-group-item {
+        &.active {
+          .item-title {
+            font-size: 14px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}

@@ -173,6 +173,43 @@
         </div>
     </div>
     <!-- 客服end -->
+    <!-- 忘記密碼彈窗 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">忘記密碼</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="col-sm-12 m-auto mt-3">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                忘記登入密碼
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                忘記提領密碼
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer row g-2">
+                    <div class="col">
+                        <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">取消</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary">送出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 忘記密碼彈窗end -->
     <!-- 註冊成功 -->
     <div class="modal fade regsuccess" id="exampleModal" tabindex="-1" data-bs-backdrop="static"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -295,7 +332,8 @@
                                             <input type="checkbox" id="scales" name="scales" class="check-checkbox" />
                                             <label for="scales" class="check-text">記住密碼</label>
                                         </div>
-                                        <a href="/login-forgot.html" class="com-cell__lf">
+                                        <a href="javascript:void(0)" class="com-cell__lf" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">
                                             <span class="cell-text">忘記密碼？</span></a>
                                     </div>
                                     <div class="contact">

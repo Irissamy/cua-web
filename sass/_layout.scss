@@ -7,6 +7,12 @@
   flex: 1;
   padding-top: 110px;
 }
+.side-content {
+  padding: 16px;
+}
+.layout-content {
+  padding: 3rem;
+}
 .side-content,
 .layout-content {
   border-radius: 12px;
@@ -20,5 +26,14 @@
   img {
     display: block;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .side-content {
+    padding: 8px;
+  }
+  .layout-content {
+    padding: 2rem;
   }
 }

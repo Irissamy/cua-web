@@ -427,3 +427,45 @@
     right: 6px;
   }
 }
+@media (max-width: 768px) {
+  #Header .wrap {
+    .navbar-brand {
+      img {
+        height: 36px;
+      }
+    }
+    .btn {
+      height: 36px;
+      font-size: 12px;
+    }
+  }
+  .inner-user {
+    &__user-m {
+      .user-m {
+        &__icon {
+          width: 44px;
+          height: 44px;
+          &__vip {
+            width: 36px;
+            height: 36px;
+          }
+        }
+      }
+    }
+    &__info {
+      .info-list__item {
+        line-height: 1.5;
+      }
+    }
+  }
+  .core-function {
+    &__item {
+      .item-icon {
+        height: 28px;
+      }
+      .item-title {
+        padding-top: 2px;
+      }
+    }
+  }
+}
