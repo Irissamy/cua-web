@@ -18,6 +18,11 @@
       height: 30%;
       background-color: #eee;
     }
+    &:last-child {
+      &::before {
+        width: 0px;
+      }
+    }
   }
 }
 .copyright {
@@ -41,8 +46,12 @@
   .footer {
     padding: 12px 0px;
   }
+  .footer-brand__img {
+    height: 28px;
+  }
   .about-list {
     &__item {
+      line-height: 1.2;
       .item-title {
         font-size: 12px;
         padding: 8px;

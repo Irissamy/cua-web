@@ -2216,7 +2216,7 @@ swiper-slide {
   position: fixed;
   top: 30%;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 .offcanvas {
@@ -2924,6 +2924,9 @@ swiper-slide {
   height: 30%;
   background-color: #eee;
 }
+.about-list__item:last-child::before {
+  width: 0px;
+}
 
 .copyright {
   text-align: center;
@@ -2943,6 +2946,12 @@ swiper-slide {
 @media (max-width: 768px) {
   .footer {
     padding: 12px 0px;
+  }
+  .footer-brand__img {
+    height: 28px;
+  }
+  .about-list__item {
+    line-height: 1.2;
   }
   .about-list__item .item-title {
     font-size: 12px;
@@ -3325,7 +3334,8 @@ section {
 .entry__content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
+  max-height: 100%;
   background-size: 100%;
   background-position: left bottom;
   background-repeat: no-repeat;
