@@ -319,13 +319,39 @@ section {
 }
 
 @media (max-width: 576px) {
+  .login-btn {
+    display: none !important;
+  }
   .main-content {
-    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    padding-top: 0px;
   }
   .sidebar-list {
     .list-item {
       width: 33%;
       height: 56px;
+    }
+  }
+  .notice-marquee {
+    position: relative;
+    bottom: 0;
+  }
+  .app-download {
+    display: none;
+  }
+  .intro {
+    display: none;
+  }
+  .game-box {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 0px;
+    background-image: none;
+    .con-title {
+      display: none;
     }
   }
 }

@@ -37,3 +37,8 @@
     padding: 2rem;
   }
 }
+@media (max-width: 576px) {
+  .layout-body {
+    max-height: 100vh;
+  }
+}

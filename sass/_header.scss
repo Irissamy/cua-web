@@ -469,3 +469,31 @@
     }
   }
 }
+@media (max-width: 576px) {
+  #Header {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    .header-brand {
+      .inner-user {
+        display: none;
+      }
+      .core-function {
+        display: none;
+      }
+    }
+  }
+  .carousel {
+    padding: 0px 16px;
+    .carousel-inner {
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%) border-box;
+      .carousel-item {
+        img {
+          height: 140px;
+        }
+      }
+    }
+  }
+}
