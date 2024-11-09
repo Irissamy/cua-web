@@ -225,7 +225,7 @@ section {
     border-radius: 12px;
     overflow: hidden;
     background: url('../images/_sidebar/icon/download_shadow@2x.png');
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     text-decoration: none;
@@ -245,7 +245,7 @@ section {
     &.active {
       background: url('../images/_sidebar/icon/download_shadow_active@2x.png')
         no-repeat center;
-      background-size: 100%;
+      background-size: 100% 100%;
       .list-item__icon {
         display: none;
         @include animation-order(zoomIn, 400ms, both, ease-in-out, 30ms);
@@ -325,7 +325,7 @@ section {
   .sidebar-list {
     .list-item {
       width: 33%;
-      height: 48px;
+      height: 56px;
     }
   }
 }
