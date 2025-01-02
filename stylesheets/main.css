@@ -2413,6 +2413,9 @@ swiper-slide {
   .offcanvas-area {
     display: none;
   }
+  .modal-dialog-scrollable .modal-content {
+    max-height: 80%;
+  }
 }
 .btn-tab {
   width: 100%;
@@ -2499,6 +2502,9 @@ swiper-slide {
 @media (max-width: 576px) {
   .layout-body {
     max-height: 100vh;
+  }
+  .layout-content {
+    padding: 16px;
   }
 }
 #Header {
@@ -3406,6 +3412,130 @@ section {
   color: white;
 }
 
+.function-box {
+  display: none;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(to right, #fdeed1 0%, #f5cb9b 100%) border-box;
+}
+.function-box__content {
+  padding: 8px 12px;
+  background-image: linear-gradient(
+    to bottom,
+    #25366d 0%,
+    #314ba4 50%,
+    #25366d 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.3137254902) 0px 4px 4px 0px;
+}
+
+.core-functional {
+  display: flex;
+  position: relative;
+  background-size: 100% 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.core-functional__lf {
+  display: flex;
+  width: 40%;
+}
+.core-functional__rt {
+  width: 60%;
+}
+.core-functional .user-info {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 0;
+}
+.core-functional .user-info__id {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 6px;
+}
+.core-functional .user-info__wallet {
+  min-height: 24px;
+  background-image: linear-gradient(
+    to right,
+    #fdeed1 0%,
+    #f9dcb5 50%,
+    #d1924b 100%
+  );
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 100%;
+  padding: 0 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3b3538;
+}
+.core-functional .user-info .icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  margin-left: -8px;
+  -webkit-mask-image: url('../images/icon_money@3x.png');
+  mask-image: url('../images/icon_money@3x.png');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: #3b3538;
+}
+.core-functional .user-info .text {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: inherit;
+  font-weight: 500;
+}
+.core-functional .user-info .text__symbol {
+  padding: 0 5px;
+}
+.core-functional .functional-list {
+  display: flex;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.core-functional .functional-list__item {
+  min-width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.core-functional .functional-list__item .item-icon {
+  width: 36px;
+  height: 28px;
+  margin-top: 4px;
+}
+.core-functional .functional-list__item .item-icon__img {
+  width: 100%;
+  display: block;
+}
+.core-functional .functional-list__item .item-text {
+  padding-top: 12px;
+  font-size: 12px;
+  color: #ebe4c1;
+  margin: 0;
+  font-weight: 600;
+  line-height: 12px;
+}
+
 @media (max-width: 980px) {
   .main-content {
     padding-top: 72px;
@@ -3456,9 +3586,13 @@ section {
     overflow: hidden;
     padding-top: 0px;
   }
+  .function-box {
+    display: block;
+  }
   .game-box {
     display: flex;
     overflow-y: hidden;
+    padding-top: 12px;
   }
   .game-box .container-md {
     display: flex;
@@ -4512,8 +4646,63 @@ section {
   }
 }
 @media (max-width: 576px) {
+  .member-detail {
+    display: none;
+  }
+  .side-content {
+    padding: 0px;
+    border: none;
+    background-image: none;
+  }
+  .member-function {
+    display: none;
+  }
   .member-main {
+    padding: 0px 0px 16px 0px;
     overflow-y: auto;
+  }
+  .member-main .core-function {
+    position: relative;
+    z-index: 1;
+    padding: 8px 0px;
+    margin-top: 12px;
+    background: transparent
+      linear-gradient(
+        180deg,
+        #a2abff 0%,
+        #689eff 6%,
+        #57d7ff 40%,
+        #689eff 74%,
+        #a2abff 96%,
+        #6e74ae 100%
+      )
+      0% 0% no-repeat;
+    border-radius: 1000px;
+    border: 1px solid #138ae7;
+  }
+  .member-main .user-list {
+    background-image: url(../images/minemenu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin: -50px -12px 0px -12px;
+    padding-top: 50px;
+  }
+  .member-main .user-list .list-group-item.active {
+    border: none;
+    background: none;
+  }
+  .member-main .user-list .list-group-item.active .item-icon {
+    filter: none;
+  }
+  .member-main .user-list .list-group-item.active .item-title {
+    color: #fff;
+  }
+  .member .member-main {
+    overflow-y: initial;
+  }
+  .member .member-function {
+    display: block;
   }
 }
 .message-cell__item {

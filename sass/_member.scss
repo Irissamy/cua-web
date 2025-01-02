@@ -635,7 +635,66 @@
   }
 }
 @media (max-width: 576px) {
+  .member-detail {
+    display: none;
+  }
+  .side-content {
+    padding: 0px;
+    border: none;
+    background-image: none;
+  }
+  .member-function {
+    display: none;
+  }
   .member-main {
+    padding: 0px 0px 16px 0px;
     overflow-y: auto;
+    .core-function {
+      position: relative;
+      z-index: 1;
+      padding: 8px 0px;
+      margin-top: 12px;
+      background: transparent
+        linear-gradient(
+          180deg,
+          #a2abff 0%,
+          #689eff 6%,
+          #57d7ff 40%,
+          #689eff 74%,
+          #a2abff 96%,
+          #6e74ae 100%
+        )
+        0% 0% no-repeat;
+      border-radius: 1000px;
+      border: 1px solid #138ae7;
+    }
+    .user-list {
+      background-image: url(../images/minemenu-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      margin: -50px -12px 0px -12px;
+      padding-top: 50px;
+      .list-group-item {
+        &.active {
+          border: none;
+          background: none;
+          .item-icon {
+            filter: none;
+          }
+          .item-title {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .member {
+    .member-main {
+      overflow-y: initial;
+    }
+    .member-function {
+      display: block;
+    }
   }
 }

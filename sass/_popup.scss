@@ -322,4 +322,9 @@
   .offcanvas-area {
     display: none;
   }
+  .modal-dialog-scrollable {
+    .modal-content {
+      max-height: 80%;
+    }
+  }
 }
