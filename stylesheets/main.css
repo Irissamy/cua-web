@@ -2409,6 +2409,11 @@ swiper-slide {
     max-width: 500px;
   }
 }
+@media (max-width: 576px) {
+  .offcanvas-area {
+    display: none;
+  }
+}
 .btn-tab {
   width: 100%;
   display: flex;
@@ -3451,9 +3456,57 @@ section {
     overflow: hidden;
     padding-top: 0px;
   }
+  .game-box {
+    display: flex;
+    overflow-y: hidden;
+  }
+  .game-box .container-md {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  .sidebar-list {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25%;
+    overflow-y: auto;
+  }
   .sidebar-list .list-item {
-    width: 33%;
-    height: 56px;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 74px;
+    height: 74px;
+    border-radius: 12px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to bottom, #314ba4 0, #131d3e 100%);
+    border: 2px rgba(255, 255, 255, 0.4392156863) solid;
+  }
+  .sidebar-list .list-item.active {
+    background: url('../images/sidebar/download_shadow_m_active@2x.png');
+  }
+  .game-side {
+    overflow-y: auto;
+    width: 75%;
+    padding-left: 8px;
+  }
+  .game-channel {
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-right: 0px;
+  }
+  .game-intro {
+    height: auto;
+    padding: 0px;
+    background-image: none;
+  }
+  .game-intro__title {
+    display: none;
+  }
+  .game-intro hr,
+  .game-intro p {
+    display: none;
   }
   .notice-marquee {
     position: relative;

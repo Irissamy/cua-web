@@ -318,3 +318,8 @@
     max-width: 500px;
   }
 }
+@media (max-width: 576px) {
+  .offcanvas-area {
+    display: none;
+  }
+}
