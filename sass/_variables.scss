@@ -36,6 +36,9 @@ select {
   outline-color: transparent;
   box-shadow: none;
 }
+div::-webkit-scrollbar {
+  display: none;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

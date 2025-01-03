@@ -814,3 +814,9 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .vip-swiper .swiper-slide .card-level {
+    height: auto !important;
+  }
+}

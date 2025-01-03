@@ -699,6 +699,10 @@ select {
   box-shadow: none;
 }
 
+div::-webkit-scrollbar {
+  display: none;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -2456,6 +2460,7 @@ swiper-slide {
   }
   .layout-content {
     padding: 2rem;
+    margin-top: 12px;
   }
 }
 @media (max-width: 576px) {
@@ -3609,9 +3614,10 @@ section {
 }
 
 .entry {
-  display: flex;
   position: relative;
+  display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .entry .entry-brand {
   display: flex;
@@ -4552,7 +4558,12 @@ section {
   }
 }
 @media (max-width: 768px) {
+  .member-main .user-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .member-main .user-list .list-group-item {
+    width: 33.33%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -4566,6 +4577,7 @@ section {
     display: none;
   }
   .side-content {
+    height: 100%;
     padding: 0px;
     border: none;
     background-image: none;
@@ -4587,6 +4599,7 @@ section {
     border: 1px solid #138ae7;
   }
   .member-main .user-list {
+    height: 100%;
     background-image: url(../images/minemenu-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -6229,6 +6242,11 @@ section {
   padding: 8px 16px 8px 24px;
 }
 
+@media (max-width: 576px) {
+  .vip-swiper .swiper-slide .card-level {
+    height: auto !important;
+  }
+}
 .transfer {
   display: flex;
   flex-direction: column;

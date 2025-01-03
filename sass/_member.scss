@@ -621,7 +621,10 @@
 @media (max-width: 768px) {
   .member-main {
     .user-list {
+      flex-direction: row;
+      flex-wrap: wrap;
       .list-group-item {
+        width: 33.33%;
         padding-left: 0;
         padding-right: 0;
         &.active {
@@ -639,6 +642,7 @@
     display: none;
   }
   .side-content {
+    height: 100%;
     padding: 0px;
     border: none;
     background-image: none;
@@ -669,6 +673,7 @@
       border: 1px solid #138ae7;
     }
     .user-list {
+      height: 100%;
       background-image: url(../images/minemenu-bg.png);
       background-repeat: no-repeat;
       background-size: cover;
