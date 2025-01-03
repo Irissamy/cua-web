@@ -4701,6 +4701,9 @@ section {
     margin: -50px -12px 0px -12px;
     padding-top: 50px;
   }
+  .member-main .user-list .list-group-item {
+    width: 50%;
+  }
   .member-main .user-list .list-group-item.active {
     border: none;
     background: none;
