@@ -23,7 +23,9 @@ html {
 body {
   margin: 0;
 }
-
+div::-webkit-scrollbar {
+  display: none;
+}
 /**
  * Add the correct display in IE 9-.
  */
