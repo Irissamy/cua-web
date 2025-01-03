@@ -2871,6 +2871,7 @@ swiper-slide {
   transition: opacity 0.5s;
 }
 .game-menu__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2879,6 +2880,23 @@ swiper-slide {
 }
 .game-menu__item:last-child {
   margin-right: 0px;
+}
+.game-menu .item-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0.6),
+    transparent
+  );
+}
+.game-menu .item-mask__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .game-menu .item-brand {
   display: flex;
