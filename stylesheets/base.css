@@ -17,6 +17,9 @@ body::-webkit-scrollbar,
 html::-webkit-scrollbar {
   display: none;
 }
+div::-webkit-scrollbar {
+  display: none;
+}
 section {
   background-color: transparent;
   padding: 2rem 0;
