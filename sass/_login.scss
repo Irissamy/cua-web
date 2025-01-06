@@ -120,6 +120,15 @@
         width: calc(100% - 12%);
       }
     }
+    .com-cell {
+      .el-input {
+        font-size: 12px;
+        color: #ffffff;
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
     .entry-btn-rt,
     .entry-btn-lf {
       position: absolute;
@@ -296,15 +305,6 @@
         transform: translate(0px, 0px);
         .main-login__title {
           transform: translate(0px, 0px);
-        }
-      }
-      .com-cell {
-        .el-input {
-          font-size: 12px;
-          color: #ffffff;
-          &::placeholder {
-            font-size: 12px;
-          }
         }
       }
     }

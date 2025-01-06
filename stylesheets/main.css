@@ -23,9 +23,7 @@ html {
 body {
   margin: 0;
 }
-div::-webkit-scrollbar {
-  display: none;
-}
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -681,6 +679,15 @@ All css below is facultative, except for:
 
 .btn {
   padding: 8px 20px;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
+
+div::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -1924,6 +1931,64 @@ tr {
 }
 .cell-list .form-qr__subtitle.-danger {
   color: #ff3d3d;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.el-value {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+}
+.el-value__reveal,
+.el-value__clear {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin: auto;
+  margin-left: 12px;
+}
+.el-value__reveal {
+  -webkit-mask-image: url('../images/icon_eye@2x.png');
+  mask-image: url('../images/icon_eye@2x.png');
+  -webkit-mask-size: 24px 24px;
+  mask-size: 24px 24px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: #909abb;
+  position: relative;
+}
+.el-value__reveal--off {
+  -webkit-mask-image: url('../images/icon_eye_off@2x.png');
+  mask-image: url('../images/icon_eye_off@2x.png');
+}
+.el-value__clear {
+  -webkit-mask-image: url('../images/icon_input_close@2x.png');
+  mask-image: url('../images/icon_input_close@2x.png');
+  -webkit-mask-size: 24px;
+  mask-size: 24px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: #909abb;
+}
+.el-value__clear.-searchBar {
+  -webkit-mask-image: url('../images/icon_close_s@3x.png');
+  mask-image: url('../images/icon_close_s@3x.png');
+  -webkit-mask-size: 18px;
+  mask-size: 18px;
+}
+.el-value__clear--active {
+  display: none;
+}
+.el-value--show {
+  display: flex;
 }
 
 .el-radio {
@@ -3614,6 +3679,16 @@ section {
 .entry-form__main--active:before {
   width: 88%;
 }
+.entry-form__main .com-cell .el-input {
+  font-size: 12px;
+  color: #ffffff;
+}
+.entry-form__main .com-cell .el-input::-moz-placeholder {
+  font-size: 12px;
+}
+.entry-form__main .com-cell .el-input::placeholder {
+  font-size: 12px;
+}
 .entry-form__main .entry-btn-rt,
 .entry-form__main .entry-btn-lf {
   position: absolute;
@@ -3808,16 +3883,6 @@ section {
 }
 .entry-form__main .main-login--active .main-login__title {
   transform: translate(0px, 0px);
-}
-.entry-form__main .main-login .com-cell .el-input {
-  font-size: 12px;
-  color: #ffffff;
-}
-.entry-form__main .main-login .com-cell .el-input::-moz-placeholder {
-  font-size: 12px;
-}
-.entry-form__main .main-login .com-cell .el-input::placeholder {
-  font-size: 12px;
 }
 .entry-form__main .main-reg {
   padding-left: 12%;

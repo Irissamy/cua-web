@@ -1,7 +1,13 @@
 .btn {
   padding: 8px 20px;
 }
-
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}
+div::-webkit-scrollbar {
+  display: none;
+}
 //間距
 $space-xxs: 2px;
 $space-xs: 4px;

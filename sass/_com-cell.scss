@@ -788,3 +788,49 @@
     }
   }
 }
+.form-group {
+  display: flex;
+  align-items: center;
+}
+.el-value {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+
+  &__reveal,
+  &__clear {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: auto;
+    margin-left: $space-md;
+  }
+  &__reveal {
+    mask-image: url('../images/icon_eye@2x.png');
+    mask-size: 24px 24px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #909abb;
+    position: relative;
+    &--off {
+      mask-image: url('../images/icon_eye_off@2x.png');
+    }
+  }
+  &__clear {
+    mask-image: url('../images/icon_input_close@2x.png');
+    mask-size: 24px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #909abb;
+    &.-searchBar {
+      mask-image: url('../images/icon_close_s@3x.png');
+      mask-size: 18px;
+    }
+    &--active {
+      display: none;
+    }
+  }
+  &--show {
+    display: flex;
+  }
+}
