@@ -10,7 +10,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
   .entry-brand {
     display: flex;
     flex-direction: column;
@@ -345,5 +344,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 576px) {
+  .entry {
+    width: 100%;
   }
 }

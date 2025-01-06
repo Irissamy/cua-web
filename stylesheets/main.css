@@ -3679,7 +3679,6 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .entry .entry-brand {
   display: flex;
@@ -4024,6 +4023,11 @@ section {
   color: #c5c8d1;
 }
 
+@media (max-width: 576px) {
+  .entry {
+    width: 100%;
+  }
+}
 .user-m {
   display: flex;
   flex-direction: column;
