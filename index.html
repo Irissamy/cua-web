@@ -1048,17 +1048,13 @@
             let navMenu = document.querySelectorAll('.game-menu');
             console.log(navItem, navMenu, navMask)
             for (let i = 0; i < navItem.length; i++) {
-                navItem[i].addEventListener("mouseover", function () {
-
+                navItem[i].addEventListener("mouseenter", function () {
                     if (navMenu[i]) {
                         navMask.style.display = 'block';
                         navMask.style.height = `${navMenu[i].offsetHeight + 16}px`;
-                    } else {
-                        navMask.style.display = 'none';
-                        navMask.style.height = 0;
                     }
                 });
-                navItem[i].addEventListener("mouseout", function () {
+                navItem[i].addEventListener("mouseleave", function () {
                     navMask.style.display = 'none';
                     navMask.style.height = 0;
                 });

@@ -363,7 +363,7 @@
   flex-wrap: wrap;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
+  padding-top: 10px;
   transition: opacity 0.5s;
   &__item {
     position: relative;
@@ -430,7 +430,7 @@
     .game-menu-mask {
       display: block;
     }
-    .game-menu {
+    > .game-menu {
       visibility: visible;
       opacity: 1;
     }

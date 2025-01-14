@@ -2887,7 +2887,7 @@ swiper-slide {
   flex-wrap: wrap;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(10px);
+  padding-top: 10px;
   transition: opacity 0.5s;
 }
 .game-menu__item {
@@ -2948,7 +2948,7 @@ swiper-slide {
 .nav-item:hover .game-menu-mask {
   display: block;
 }
-.nav-item:hover .game-menu {
+.nav-item:hover > .game-menu {
   visibility: visible;
   opacity: 1;
 }
