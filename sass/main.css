@@ -3613,14 +3613,14 @@ section {
   width: 88%;
 }
 .entry-form__main .com-cell .el-input {
-  font-size: 12px;
+  font-size: 16px;
   color: #ffffff;
 }
 .entry-form__main .com-cell .el-input::-moz-placeholder {
-  font-size: 12px;
+  font-size: 16px;
 }
 .entry-form__main .com-cell .el-input::placeholder {
-  font-size: 12px;
+  font-size: 16px;
 }
 .entry-form__main .entry-btn-rt,
 .entry-form__main .entry-btn-lf {
@@ -3743,7 +3743,7 @@ section {
 }
 .entry-form__main .main-login .com-cell__form,
 .entry-form__main .main-reg .com-cell__form {
-  min-height: 40px;
+  min-height: 48px;
   padding: 8px 0px;
   border: 1px solid transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
@@ -3835,7 +3835,7 @@ section {
   transform: translate(0px, 0px);
 }
 .entry-form__main .main-reg .com-cell .el-input {
-  font-size: 12px;
+  font-size: 16px;
   color: #ffffff;
 }
 .entry-form__main .main-reg .com-cell .el-value__reveal, .entry-form__main .main-reg .com-cell .el-value__clear {
